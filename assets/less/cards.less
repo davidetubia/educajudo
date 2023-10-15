@@ -1,0 +1,25 @@
+.card{
+    border: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.136);
+    h5{
+        color: @verde;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .card-text{
+        color: @grigio;
+    }
+    .card-footer{
+        background-color: @verde;
+        border-top: 1px solid darken(@verde, 10);
+        a{
+            color: white;
+            &:hover{
+                background-color: darken(@verde, 20);
+            }
+            &:first-child{
+                border-right: 1px solid white;
+            }
+        }
+    }
+}

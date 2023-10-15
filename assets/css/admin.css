@@ -1,0 +1,36 @@
+.cap {
+  padding: 3px;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #dcdcdc;
+  border-left: 5px solid green;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+}
+
+.cap h5 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0px!important;
+  margin: 0px!important;
+}
+
+.cap .btn {
+  margin-right: 5px;
+}
+
+.cap-secondary {
+  margin-left: 30px;
+}
+
+.domanda-quiz {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}
