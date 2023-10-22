@@ -21,6 +21,30 @@
                     <a href="scheda.php">Scheda relatore</a>
                 </div>
             </div>
+            <div class="relatore grid-item">
+                <img src="assets/relatori/andrea-bonifacio.jpg" alt="@a.Nome">
+                <div class="relatore-body">
+                    <h2>Nome relatore</h2>
+                    <p>Titolo</p>
+                    <a href="scheda.php">Scheda relatore</a>
+                </div>
+            </div>
+            <div class="relatore grid-item">
+                <img src="assets/relatori/andrea-bonifacio.jpg" alt="@a.Nome">
+                <div class="relatore-body">
+                    <h2>Nome relatore</h2>
+                    <p>Titolo</p>
+                    <a href="scheda.php">Scheda relatore</a>
+                </div>
+            </div>
+            <div class="relatore grid-item">
+                <img src="assets/relatori/andrea-bonifacio.jpg" alt="@a.Nome">
+                <div class="relatore-body">
+                    <h2>Nome relatore</h2>
+                    <p>Titolo</p>
+                    <a href="scheda.php">Scheda relatore</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>

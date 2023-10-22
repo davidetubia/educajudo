@@ -47,6 +47,10 @@
   background-color: black!important;
   font-size: 14px!important;
 }
+.dropdown-item {
+  font-size: 18px!important;
+  padding: 15px 20px;
+}
 .dropdown-item:hover {
   background-color: #8cc63e;
   color: white!important;
@@ -85,17 +89,33 @@ p {
   font-size: 20px!important;
   line-height: 28px;
 }
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 18px!important;
+    line-height: 26px;
+  }
+}
 h1 {
   font-size: 42px!important;
   font-weight: bold!important;
 }
 h2 {
-  font-size: 32px!important;
+  font-size: 36px!important;
   font-weight: bold!important;
+}
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 26px!important;
+    font-weight: bold!important;
+  }
 }
 h3 {
   font-size: 18px!important;
   font-weight: bold!important;
+}
+h4 {
+  font-size: 16px!important;
+  font-weight: bold;
 }
 .text-small {
   font-size: 11px!important;
@@ -119,10 +139,14 @@ body {
   color: #fff;
   background-color: #000;
 }
-@media only screen and (max-width: 1000px) {
-  #svolgimento-corso {
-    min-height: 100%;
-  }
+#pleaserotate-graphic {
+  fill: white;
+}
+#pleaserotate-backdrop {
+  position: fixed;
+  color: #fff;
+  z-index: 999999;
+  background-color: #8cc547;
 }
 .container-corso {
   position: relative;
@@ -149,7 +173,7 @@ body {
   z-index: 999999;
 }
 .container-corso article {
-  padding-top: 85px;
+  padding-top: 30px;
   width: 80%;
 }
 @media only screen and (max-width: 1000px) {
@@ -179,55 +203,7 @@ body {
 .container-corso #next-lesson a:visited {
   color: white;
 }
-.container-corso .quiz-alert {
-  position: fixed;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  z-index: 999;
-  color: white;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.container-corso .quiz-alert h1 {
-  font-size: 2rem;
-  margin-bottom: 50px;
-}
-.container-corso .quiz-alert h2 {
-  font-size: 1.2rem;
-}
-@media only screen and (max-width: 1000px) {
-  .container-corso .quiz-alert {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .container-corso .quiz-alert p {
-    font-size: 14px!important;
-    line-height: 16px;
-  }
-}
 .container-corso aside {
-  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.364);
-          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.364);
   position: fixed;
   background: #fff;
   overflow-y: scroll;
@@ -255,6 +231,47 @@ body {
   width: 100%;
   height: auto;
   aspect-ratio: 0.5625;
+}
+.container-quiz .quiz-alert {
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  z-index: 999;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media only screen and (max-width: 1000px) {
+  .container-quiz .quiz-alert h1 {
+    font-size: 24px!important;
+  }
+  .container-quiz .quiz-alert h2 {
+    font-size: 18px!important;
+  }
+  .container-quiz .quiz-alert p {
+    font-size: 12px!important;
+  }
 }
 .tab-content {
   padding: 0px!important;
@@ -355,11 +372,13 @@ body {
   padding: 10px;
 }
 #question {
-  background-image: url('../..images/bg-quiz.jpeg');
+  background-image: url('../../images/bg-quiz.jpeg');
   background-size: cover;
+  width: 100%;
   text-align: center;
   padding: 50px;
   min-height: 100vh;
+  min-width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,7 +430,9 @@ body {
 }
 @media only screen and (max-width: 1000px) {
   #question .answers div {
-    font-size: 14px;
+    font-size: 20px;
+    padding: 5px;
+    min-height: auto;
   }
 }
 .btn-conferma {

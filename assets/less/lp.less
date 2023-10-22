@@ -5,9 +5,12 @@
 @import 'navbar.less';
 @import 'typos.less';
 @import 'sizes.less';
+@import 'corso.less';
 
 body, html{
     font-family: 'Lato', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -23,7 +26,6 @@ body, html{
     .grid-item{
         padding: 20px;
         border: 1px solid white;
-        display: flex;
         align-items: center;
         text-align: left;
         border-radius: 20px;
@@ -33,16 +35,13 @@ body, html{
             padding: 20px;
             min-height: auto;
         }
-        i{
-            display: block;
-            width: 20%;
-            text-align: center;
-            margin-right: 20px;
-            font-size: 60px;
+        .icon{
             color: @giallo;
-            @media only screen and (max-width: 600px) {
-                font-size: 40px;
-            }
+            min-width: 60px;
+            max-width: 60px;
+            font-size: 40px;
+            margin-right: 10px;
+            text-align: center;
         }
     }
 }
@@ -51,15 +50,17 @@ body, html{
 #perche{
     .img-perche{
         height: 300px;
-        width: 90%;
+        width: 100%;
         overflow: hidden;
         border-radius: 30px;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.317);
         margin-bottom: 20px;
+        @media only screen and (max-width: 600px) {
+           height: 220px;
+        }
             img{
-                min-width: 100%;
-                min-height: 100%;
-                object-fit: cover;
+                height: 100%;
+                object-fit: cover!important;
             }
     }
 }
@@ -92,7 +93,6 @@ body, html{
             .relatore-body{
                 padding:20px;
                 h2{
-                    font-size: 1.3rem;
                     margin: 0px;
                     padding: 0px;
                     color: @viola;
@@ -110,35 +110,22 @@ body, html{
     }
     }
 
-.modal {
-    text-align: center;
-  }
   
-  @media screen and (min-width: 768px) { 
-    .modal:before {
-      display: inline-block;
-      vertical-align: middle;
-      content: " ";
-      height: 100%;
-    }
-  }
-  
-  .modal-dialog {
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-    min-width: 600px;
-
-  }
 
 #home{
     height: 100vh;
-    margin-top: -25px;
-    background-image: url('../images/bg-primary.jpeg');
+    margin-top: -24px;
     background-position: center center;
     background-size: cover;
     color:white;
     position: relative;
+    transition: all 1s;
+    .container-home{
+        padding: 100px 30px;
+        @media only screen and (max-width: 600px) {
+            padding: 100px 20px 30px 20px;
+        }
+    }
     &:after{
         content: '';
         position: absolute;
@@ -146,7 +133,7 @@ body, html{
         height: 100%;
         width: 100%;
         z-index: 0;
-        background-color: rgba(0, 0, 0, 0.26);
+        background-color: rgba(0, 0, 0, 0.25);
     }
     @media only screen and (max-width: 600px) {
         background-position: 75%;
@@ -158,25 +145,52 @@ body, html{
             height: 100%;
             width: 100%;
             z-index: 0;
-            background-color: rgba(0, 0, 0, 0.26);
+            background-color: rgba(0, 0, 0, 0.4);
         }
     }
     .caption{
         position: relative;
         z-index: 1;
         h1{
-            font-size: 3rem;
+            font-size: 3rem!important;
             font-weight: 700;
             @media only screen and (max-width: 600px) {
-                font-size: 1.6rem;
+                font-size: 1.6rem!important;
+            }
+        }
+        p{
+            font-size: 24px!important;
+            line-height: 32px!important;
+            @media only screen and (max-width: 600px) {
+                font-size: 18px!important;
+                line-height: 22px!important;
             }
         }
     }
 
+    .loghi{
+        div{
+            padding: 10px;
+        }
+        img{
+            max-height: 35px;
+            width: auto!important;
+            @media only screen and (max-width: 600px) {
+                max-height: 20px;
+            }
+        }
+        #logo-fijlkam{
+            max-height: 28px!important;
+            margin-top: 3px;
+        }
+        #logo-ijf{
+            margin-left: 10px;
+            max-height: 30px!important;
+        }
+    }
+
     .adopted-by{
-        position: absolute;
         z-index: 1;
-        bottom: 6%;
         font-size: 10px;
         text-transform: uppercase;
         @media only screen and (max-width: 600px) {
@@ -184,7 +198,7 @@ body, html{
         }
         img{
             width: 300px;
-            margin-top: 5px;
+
             @media only screen and (max-width: 600px) {
                 width: 180px;
             }
@@ -192,22 +206,34 @@ body, html{
     }
 }
 
+.home-bg-1{
+    background-image: url('../images/bg-primary.jpeg');
+}
+.home-bg-2{
+    background-image: url('../images/bg-secondary.jpg');
+}
+.home-bg-3{
+    background-image: url('../images/bg-third.jpg');
+}
+
 #relatori{
     video{
-        width: 500px;
-        height: 700px;
-        @media only screen and (max-width: 600px) {
-            width: 100%;
-            height: auto;   
-        }
+        width: 100%;
+        aspect-ratio: 3/4;
+        object-fit: cover;
     }
 }
 
 #piattaforma{
     .icons{
-        font-size: 72px;
+            margin-bottom: 20px;
         i{
+            font-size: 72px;
             margin: 0px 50px;
+            @media only screen and (max-width: 600px) {
+                font-size: 40px;
+                margin: 0px 20px;
+            }
         }
     }
     .grid{
@@ -243,7 +269,6 @@ body, html{
                 padding: 20px;
                 align-items: center;
                 h3{
-                    font-size: 1.3rem;
                     font-weight: 800;
                     color:white;
                 }
@@ -281,8 +306,6 @@ a.anchor {
     }
     h4{
         color: @verde;
-        font-size: 2.4rem;
-        line-height: 2.4rem;
         font-weight: bold;
         margin: 0px;
         padding: 0px;
@@ -305,9 +328,20 @@ a.anchor {
 
 #percorso{
     .metodi{
-        i{
+        gap: 5px;
+        div{
+            flex: 1 1 0px;
+            background-color: rgb(246, 246, 246);
+            margin: 5px 0px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        i, img{
             color: @verde;
             font-size: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
     }
 }
@@ -319,8 +353,11 @@ a.anchor {
     align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
+    p{
+        line-height: 18px;
+    }
     .tl{
-        width: 50%;
+        width: 60%;
         text-align: left;
         align-items: center;
         margin-bottom: 75px;
@@ -330,7 +367,7 @@ a.anchor {
     }
     .judoka{
         display: flex;
-        width: 50%;
+        width: 40%;
         align-items:flex-end;
         justify-content: flex-end;
         @media only screen and (max-width: 600px) {
@@ -380,6 +417,7 @@ a.anchor {
                 max-width: 100%;
             }
             h3{
+                color: @viola;
             }
         }
         .area-img{
@@ -414,32 +452,10 @@ a.anchor {
 }
 
 #chi{
-    ul{
-        padding: 0px;
-        list-style: none;
-        li{
-            display: block;
-            height: 50px;
-            width: 100%;
-            line-height: 16px;
-            border-bottom: 1px solid @light-gray;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-            &:before{
-                content: "√";
-                font-weight: bold;
-                line-height: 30px;
-                text-align: center;
-                display: block;
-                float: left;
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                background-color: @verde;
-                color: white;
-                margin-bottom: 10px;
-                margin-right: 20px;
-            }
+    .check{
+        img{
+            max-height: 30px;
+            margin-right: 15px;
         }
     }
 }
@@ -452,11 +468,7 @@ a.anchor {
         }
         h5{
             font-weight: 800;
-            font-size: 2rem;
             margin-top: 20px;
-            @media only screen and (max-width: 600px) {
-                font-size: 1.5rem;
-            }
         }
         .riconoscimento{
             background-color: @light-gray;
@@ -464,21 +476,20 @@ a.anchor {
             border-radius: 10px;
             padding: 5px 30px;
             margin-bottom: 5px;
-            font-size: 1.2rem;
-            font-weight: 800;
             display: flex;
             align-items: center;
             @media only screen and (max-width: 600px) {
-                font-size: 1rem;
                 line-height: 1rem;
                 font-weight: 400;
                 padding: 15px;
                 margin-bottom: 10px;
             }
             .riconoscimento-desc{
-                width: 80%;
+                width: 70%;
             }
             .riconoscimento-icon{
+                text-align: center;
+                width: 30%;
                 color: @verde;
                 font-size: 40px;
             }
@@ -489,6 +500,25 @@ a.anchor {
         }
     }
 }
+
+#assistenza{
+    background-color: black;
+    .link-assistenza{
+        gap: 10px;
+        a{
+            width: 100%;
+            color:white;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 10px;
+            &:hover{
+                background-color: @verde;
+                color: black;
+            }
+        }
+    }
+}
+
 
 footer{
     background-color: black;
@@ -503,5 +533,116 @@ footer{
         color: white;
         text-decoration: none!important;
     }
+    ul{
+        padding:0px;
+        li{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+    }
     
+}
+
+.payment-result{
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.156);
+    background-color: white;
+    h2{
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    p{
+        line-height: 18px;
+        margin-top: 10px;
+    }
+    img{
+        width: 80px;
+        margin-bottom: 20px;
+    }
+}
+
+.bg-black{
+    background-color: black;
+}
+
+
+.valutazione{
+    h3{
+        font-weight: 400!important;    
+    }
+}
+
+.voti {
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    clear: both;
+  li {
+    float: left;
+    width: 100px;
+    height: 32px;
+    display: flex;
+    position: relative;
+    font-size: 13px;
+  }
+  
+  label,
+  input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+  }
+  
+  input[type="radio"]:checked+label,
+  .Checked+label {
+    background: @verde;
+  }
+  
+  label {
+    padding: 5px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    z-index: 90;
+  }
+  
+  label:hover {
+    background: #DDD;
+  }
+}
+
+.rounded-box-shadow{
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgb(219, 219, 219);
+    background-color: white;
+}
+
+.bg-texture{
+    background-image: url('../images/so-white.png');
+}
+
+.login-register{
+    height: 100vh;
+    min-height: 100vh;
+    @media only screen and (max-width: 600px) {
+        height: auto;
+        min-height: auto;
+        text-align: center;
+    }
+}
+
+.text-right{
+    text-align: right!important;
+}
+
+.text-left{
+    text-align: left!important;
 }

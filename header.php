@@ -25,11 +25,16 @@
                 <a href="/educajudo"><img src="images/edutraining-green.png" id="logo" alt="Logo Fijlkam ed Educajudo"></a>
             </div>
 
+                <!-- NASCONDERE DOPO LOGIN -->
                 <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
                     <i class="bi bi-person-fill"></i> Accedi
                 </button>
+                <!-- NASCONDERE DOPO LOGIN -->
 
-                <div class="dropdown">
+
+                <!-- 
+                    DA MOSTRARE DOPO LOGIN
+                    <div class="dropdown">
                     <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-person-fill"></i> Il tuo account
                     </button>
@@ -44,6 +49,8 @@
                         <li><a class="dropdown-item" href="/@lingua/auth/logout"><i class="bi bi-door-open-fill"></i> Esci</a></li>
                     </ul>
                 </div>
+
+                -->
 
             <nav>
                 <a href="#menu" id="toggle"><span></span></a>

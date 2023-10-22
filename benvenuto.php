@@ -1,11 +1,4 @@
-﻿
-@{
-    ViewBag.Title = "Benvenuto";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-    string lingua = HttpContext.Current.Request.RequestContext.RouteData.Values["lingua"].ToString().ToLower();
-}
-
-<div id="checkout" class="d-flex align-items-center">
+﻿<div id="checkout" class="d-flex align-items-center">
     <div class="container">
         <h1>
             Diventa ora<br>

@@ -1,8 +1,5 @@
-﻿
-@{
-    ViewBag.Title = "Introduzione al corso";
-    Layout = "~/Views/Shared/_LayoutMyArea.cshtml";
-}
+﻿<?php include 'header.php'; ?>
+
 <style>
     .container {
         max-width: 1000px;
@@ -37,6 +34,10 @@
     </div>
 </div>
 
+<a href="/educajudo/myarea/esegui.php" class="btn btn-primary">Inizia il corso</a>
+
+
+<!-- SCRIPT NON RICONOSCIUTO
 @section scripts{
     <script type='text/javascript'>
         document.getElementById('video-corso').addEventListener('ended', passaavantiHandler, false);
@@ -45,3 +46,5 @@
         }
     </script>
 }
+-->
+<?php include 'footer.php'; ?>

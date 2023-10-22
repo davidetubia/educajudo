@@ -1,10 +1,7 @@
-﻿<source src="/corsi/video/@(_d.ID).mp4" type="video/mp4">
-
-<div id="video">
-        <video id="video-corso" autoplay controls>
+﻿<div id="video">
+    <video id="video-corso" autoplay loop muted playsinline>
         <source src="https://www.dropbox.com/s/f2ofkng6t7hek1p/3.%20BENSO%20-%20SVILUPPO%20NEUROCEREBRALE%20Fabio%20Della%20Moglie.mp4?raw=1" type="video/mp4">
-        </video>
-</div>
+    </video>
     <div class="info-redattore p-3">
         <h5>Informazioni sul relatore</h5>
         <div class="d-flex align-items-center">
@@ -19,7 +16,7 @@
             </div>
         </div>
     </div>
-
+</div>
 
 
 <div id="next-lesson" class="overlay text-center" style="display:none;">
@@ -64,11 +61,10 @@
 
 <!-- SEZIONI CORSO -->
 
-<div class="section-container accordion" id="accordionExample">
-
+<div class="sezioni-corso section-container accordion" id="sezioni-corso">
         <div class="section-single accordion-item">
             <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sezione-@a.ID" aria-expanded="true" aria-controls="sezione-@a.ID">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#id-sezione-1" aria-expanded="true" aria-controls="sezione-@a.ID">
                     <div class="info-sezione">
                         <span class="titolo-sezione">Titolo sezione</span>
                         <span class="info-corso">
@@ -81,20 +77,20 @@
                     </div>
                 </button>
             </h2>
-            <div id="sezione-@a.ID" class="accordion-collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+
+            <div id="id-sezione-1" class="accordion-collapse" aria-labelledby="headingOne" data-bs-parent="#sezioni-corso">
                 <div class="accordion-body">
                     <ul>
+                        <li>
+                            <a href="/myarea/mycorsi/esegui/@b.ID">Titolo lezione</a>
+                            <span>Durata</span>
+                        </li>
 
-                                <li>
-                                    <a href="/myarea/mycorsi/esegui/@b.ID">Titolo lezione</a>
-                                    <span>Durata</span>
-                                </li>
-
-                                <li>
-                                    Titolo
-                                    <span>Durata</span>
-                                </li>
-                                <li class="quiz">Quiz</li>
+                        <li>
+                            Titolo
+                            <span>Durata</span>
+                        </li>
+                        <li class="quiz">Quiz</li>
                     </ul>
                 </div>
             </div>
@@ -107,7 +103,7 @@
         <div class="progress">
             <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="@_progress" aria-valuemin="0" aria-valuemax="100">50% completato</div>
         </div>
-        <h6 class="mt-3"><a href="/myarea/myapprendimento">Guarda la dashboard dei tuoi progressi ></a></h6>
+        <h6 class="mt-3"><a href="/educajudo/myarea/apprendimento.php">Guarda la dashboard dei tuoi progressi ></a></h6>
     </div>
     <!-- /AVANZAMENTO -->
 

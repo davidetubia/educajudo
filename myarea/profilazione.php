@@ -1,21 +1,6 @@
-﻿<?php include 'header.php'; 
-$header = 1;
-$corso = 1;
+﻿<?php include 'header.php'; ?>
 
-?>
 
-<!-- <div id="checkout" class="d-flex align-items-center">
-    <div class="container">
-        <h1>
-            Sei a un passo dal<br>
-            diventare esperto/a<br>
-            nella didattica<br>
-            infantile
-        </h1>
-    </div>
-</div> -->
-
-<section id="registrazione" style="padding-top: 150px; padding-bottom: 150px">
     <div class="container">
         <div class="row">
             <h2>Completa i tuoi dati</h2>
@@ -26,11 +11,11 @@ $corso = 1;
             <div class="row">
                 <div class="col">
                     <label for="">Nome*</label>
-                    <input type="text" class="form-control" id="" name="">
+                    <input type="text" class="form-control" id="" name="" required>
                 </div>
                 <div class="col">
                     <label for="">Cognome*</label>
-                    <input type="text" class="form-control" id="" name="">
+                    <input type="text" class="form-control" id="" name="" required>
                 </div>
             </div>
         </div>
@@ -39,32 +24,32 @@ $corso = 1;
             <div class="row">
                 <div class="col">
                     <label for="">Data di nascita*</label>
-                    <input type="date" class="form-control" id="" name="">
+                    <input type="date" class="form-control" id="" name="" required>
                 </div>
                 <div class="col">
                     <label for="">Luogo di nascita*</label>
-                    <input type="text" class="form-control" id="" name="">
+                    <input type="text" class="form-control" id="" name="" required>
                 </div>
             </div>
         </div>
 
         <div class="form-group mb-3">
             <div class="row">
-                <div class="col">
+                <div class="col-6 col-md-3">
                     <label for="">Domicilio*</label>
-                    <input type="text" class="form-control" id="" name="">
+                    <input type="text" class="form-control" id="" name="" required>
                 </div>
-                <div class="col">
+                <div class="col-6 col-md-3">
                     <label for="">Città*</label>
-                    <input type="text" class="form-control" id="" name="">
+                    <input type="text" class="form-control" id="" name="" required>
                 </div>
-                <div class="col">
+                <div class="col-6 col-md-3">
                     <label for="">Provincia*</label>
-                    <input type="text" class="form-control" id="" name="">
+                    <input type="text" class="form-control" id="" name="" required>
                 </div>
-                <div class="col">
+                <div class="col-6 col-md-3">
                     <label for="">Stato*</label>
-                    <input type="text" class="form-control" id="" name="">
+                    <input type="text" class="form-control" id="" name="" required>
                 </div>
             </div>
         </div>
@@ -73,7 +58,7 @@ $corso = 1;
             <div class="row">
                 <div class="col">
                     <label for="">Telefono*</label>
-                    <input type="text" class="form-control" id="" name="">
+                    <input type="text" class="form-control" id="" name="" required>
                 </div>
             </div>
         </div>
@@ -82,7 +67,7 @@ $corso = 1;
             <div class="row">
                 <div class="col">
                     <label for="">Titolo di studio*</label>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control" name="" id="" required>
                         <option value="">Laurea</option>
                         <option value="">Diploma scuole superiori</option>
                         <option value="">Licenza media</option>
@@ -91,7 +76,7 @@ $corso = 1;
                 </div>
                 <div class="col">
                     <label for="">Professione*</label>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control" name="" id="" required>
                         <option value="">chinesiologo</option>
                         <option value="">fisioterapista/osteopata</option>
                         <option value="">medico</option>
@@ -108,7 +93,7 @@ $corso = 1;
                 </div>
                 <div class="col">
                     <label for="">Studente*</label>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control" name="" id="" required>
                         <option value="">scienze motorie</option>
                         <option value="">fisioterapia </option>
                         <option value="">medicina</option>
@@ -127,21 +112,33 @@ $corso = 1;
             <div class="row">
                 <div class="col">
                     <label for="">Tesserato Fijlkam*</label>
-                    <select class="form-control" name="tesserato" id="tesserato">
+                    <select class="form-control" name="tesserato" id="tesserato" required>
                         <option value="">---Seleziona---</option>
-                        <option value="1">Si</option>
-                        <option value="0">No</option>
+                        <option value="1" data-show="tesseratoFijlkam" data-hide="altroOrganismo">Si</option>
+                        <option value="0" data-show="altroOrganismo" data-hide="tesseratoFijlkam">No</option>
                     </select>
                 </div>
             </div>
         </div>
 
+        <script>
+            $('.hidden').hide();
+            $(document).on('change', '#tesserato', function(){
+                var val = $(this).val();
+                var show = '#'+$(this).children('option[value="'+val+'"]').attr('data-show');
+                var hide = '#'+$(this).children('option[value="'+val+'"]').attr('data-hide');
+                console.log('Mostra ' + show);
+                console.log('Nascondi ' + hide);
+                $(show).show();
+                $(hide).hide();
+            });
+        </script>
         <div id="tesseratoFijlkam" class="hide">
             <div class="form-group mb-3">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-12 col-md-4">
                         <label for="">Disciplina*</label>
-                        <select class="form-control" name="" id="">
+                        <select class="form-control" name="" id="" required>
                             <option value="">judo</option>
                             <option value="">lotta </option>
                             <option value="">karate</option>
@@ -155,9 +152,9 @@ $corso = 1;
                             <option value="">s'istrumpa</option>
                         </select>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-md-4">
                         <label for="">Profilo / qualifica*</label>
-                        <select class="form-control" name="" id="">
+                        <select class="form-control" name="" id="" required>
                             <option value="">Praticante > 18 anni</option>
                             <option value="">Aspirante allenatore</option>
                             <option value="">Allenatore</option>
@@ -165,9 +162,9 @@ $corso = 1;
                             <option value="">Maestro</option>
                         </select>
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-md-4">
                         <label for="">Grado</label>
-                        <select class="form-control" name="" id="">
+                        <select class="form-control" name="" id="" required>
                             <option value="">6° kyu</option>
                             <option value="">5° kyu</option>
                             <option value="">4° kyu</option>
@@ -193,22 +190,22 @@ $corso = 1;
                 <div class="row">
                     <div class="col">
                         <label for="">Società di appartenenza*</label>
-                        <input type="text" class="form-control" id="" name="">
+                        <input type="text" class="form-control" id="" name="" required>
                     </div>
                     <div class="col">
                         <label for="">Località*</label>
-                        <input type="text" class="form-control" id="" name="">
+                        <input type="text" class="form-control" id="" name="" required>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="altroOrganismo" class="hidden hide">
+        <div id="altroOrganismo" class="hide">
         <div class="form-group mb-3">
             <div class="row">
                 <div class="col">
                     <label for="">Tesserato altra federazione sportiva italiana</label>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control" name="" id="" required>
                         <option value="">L'Aero Club d'Italia (AECI)</option>
                         <option value="">L'Automobile Club d'Italia (ACI)</option>
                         <option value="">Federazione Italiana Atletica Leggera (FIDAL)</option>
@@ -261,7 +258,7 @@ $corso = 1;
             <div class="row">
                 <div class="col">
                     <label for="">Tesserato presso organismi sportivi non italiani (specificare sport ed ente)*</label>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control" name="" id="" required>
                         <option value="1">Si</option>
                         <option value="0">No</option>
                     </select>
@@ -271,17 +268,17 @@ $corso = 1;
 
         <div class="form-group mb-3">
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-md-4">
                     <label for="">Sport*</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" required>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-4">
                     <label for="">Nome federazione o ente*</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" required>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-4">
                     <label for="">Nazione*</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" required>
                 </div>
             </div>
         </div>
@@ -290,7 +287,7 @@ $corso = 1;
             <div class="row">
                 <div class="col">
                     <label for="">Tesserato ente promozione sportiva (selezionare solo se no federazione)*</label>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control" name="" id="" required>
                         <option value="">Acsi</option>
                         <option value="">Aics</option>
                         <option value="">Asc</option>
@@ -315,7 +312,7 @@ $corso = 1;
             <div class="row">
                 <div class="col">
                     <label for="">Tesserato ente promozione sportiva (selezionare solo se no federazione)*</label>
-                    <select class="form-control" name="" id="">
+                    <select class="form-control" name="" id="" required>
                         <option value="">Federazione Arrampicata Sportiva Italiana (FASI)</option>
                         <option value="">Federazione Italiana Biliardo Sportivo (FIBiS)</option>
                         <option value="">Federazione Italiana Sport Bowling (FISB)</option>
@@ -341,7 +338,7 @@ $corso = 1;
         </div>
         </div>
 
-        <a href="corsi/svolgimento.php?slide=34" class="btn btn-success btn-block btn-lg mt-3">Inizia il tuo corso</a>
+        <a href="index.php" class="btn btn-primary btn-block btn-lg mt-3">Inizia il corso</a>
     </div>
 </section>
 <script>

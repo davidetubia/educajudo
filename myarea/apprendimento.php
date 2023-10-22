@@ -1,13 +1,13 @@
 ﻿<?php include 'header.php'; ?>
 
-<div class="container" style="padding-top:100px">
-    <div class="d-flex align-items-center pb-5">
-        <h1 class="flex-grow-1">Il mio percorso di studi</h1>
+<div class="container mt-5">
+    <div class="mb-3">
+        <h2>Il mio percorso di studi</h2>
         <a href="esegui.php" class="btn btn-primary">Riprendi gli studi</a>
     </div>
 
     <div class="row">
-    <div class="col-12 col-md-6 h-100">
+    <div class="col-12 col-md-6 h-100 mb-3 mb-md-0">
         <div class="chart">
             <h5>Le tue ore di studio</h5>
             <canvas id="lezioniCompletate"></canvas>
@@ -16,16 +16,16 @@
 
     <div class="col-12 col-md-6 h-100">   
         <div class="row h-100">
-            <div class="col-12 col-md-6 h-100">
+            <div class="col-12 col-md-6 h-100 mb-3 mb-md-0">
                 <div class="chart">
                     <h5>Stato avanzamento</h5>
                     <canvas id="statoAvanzamento"></canvas>
                 </div>
             </div>
-            <div class="col-12 col-md-6 h-100">
+            <div class="col-12 col-md-6 h-100 mb-3 mb-md-0">
                 <div class="chart">
                     <h5>Minuti di video visti</h5>
-                    <canvas id="statoAvanzamento2"></canvas>25
+                    <canvas id="statoAvanzamento2"></canvas>
                 </div>
             </div>
         </div>
@@ -34,20 +34,23 @@
 
 
     <div class="row mt-4 mb-5">
-        <div class="col-12 col-md-5">
+        <div class="col-12 col-md-5 mb-3 mb-md-0">
             <div class="chart">
                 <h5>Competenze acquisite</h5>
-                <canvas id="polar"></canvas>N/A
+                <canvas id="polar"></canvas>
             </div>
         </div>
-        <div class="col-12 col-md-7">
+        <div class="col-12 col-md-7 mb-3 mb-md-0">
             <div class="chart">
                 <h5>Esito dei test</h5>
                 <canvas id="bar"></canvas>-
             </div>
         </div>
     </div>
+
 </div>
+
+
 
 
 <script>

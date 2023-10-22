@@ -1,8 +1,8 @@
 ﻿<?php include 'header.php'; ?>
 
-    <section id="home" class="home-slider d-flex flex-column justify-content-center home-bg-1">
-        <div class="container">
-            <div class="caption">
+    <section id="home" class="d-flex align-items-start flex-column home-bg-1">
+        <div class="container-home container d-flex flex-column mb-auto h-100">
+            <div class="caption mt-auto mb-auto">
                 <h1>EduTraining Class</h1>
                 <p>
                 La piattaforma di formazione H24<br>
@@ -11,16 +11,23 @@
                 </p>
                 <a href="iscriviti.php" class="btn btn-primary">Iscriviti ai corsi</a>
             </div>
-            <div class="adopted-by d-flex flex-row m-auto">
-            <div class="d-flex flex-column" style="margin-right: 50px;">
-                <span>Powered by</span>
-                <img src="images/logo-educajudo_2.png" style="max-width: 220px;" style="margin-top:30px;" alt="">
+
+            <div class="adopted-by d-flex flex-row loghi">
+                <div class="d-flex flex-column">
+                    <span>Adopted by</span>
+                    <div class="d-flex flex-row p-0 align-items-center">
+                        <img src="images/logo-fijlkam.png" id="logo-fijlkam" alt="Logo Fijlkam">
+                        <img src="assets/images/logo-ijf.png" id="logo-ijf" alt="Logo IJF Academy">
+                    </div>
+                </div>
             </div>
-            <div class="d-flex flex-column">
-                <span>Adopted by</span>
-                <img src="assets/images/logo-ijf.png" style="max-width: 220px;" alt="">
+            <div class="adopted-by d-flex flex-row loghi">
+                <div class="d-flex flex-column">
+                    <span>Powered by</span>
+                    <img src="images/logo-educajudo_2.png" alt="Logo Educajudo.it">
+                </div>
             </div>
-            </div>
+
         </div>
     </section>
 
@@ -36,15 +43,12 @@
     function loopClasses() {
     var currentClass = classes[classIndex];
 
-    // loop through classes and remove from element
     for (var i = 0; i < classes.length; i++) {
         $('#home').removeClass(classes[i]);
     }
 
-    // add current class to element
     $('#home').addClass(currentClass);
 
-    // advance or reset loop counter
     classIndex = (classIndex + 1) % classes.length
 
     }
@@ -54,8 +58,8 @@
 
     <section id="perche" class="p-section bg-light-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
+            <div class="d-flex flex-md-row flex-column align-items-center">
+                <div class="d-none d-md-block w-50 p-5">
                     <div class="img-perche">
                         <img src="images/abuso-devices.jpeg" alt="">
                     </div>
@@ -63,18 +67,49 @@
                         <img src="images/effetti-della-pandemia.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-md-9">
+                <div class="d-flex flex-column w-100">
                     <h2 class="text-violet">Perchè EduTraining Class</h2>
+                    <div class="img-perche d-block d-md-none">
+                        <img src="images/abuso-devices.jpeg" alt="">
+                    </div>
                     <p>L'esigenza di potenziamento dell'<strong>attività motoria per i bambini in età prescolare</strong>, in risposta alle misure restrittive per il contenimento del coronavirus e all’abuso precoce dello strumento digitale, rappresenta lo scenario che si sta presentando agli occhi di genitori, educatori, personale sanitario ed insegnanti dello sport.</p>
+                    <div class="img-perche d-block d-md-none">
+                        <img src="images/effetti-della-pandemia.jpg" alt="">
+                    </div>
                     <p>Una fascia di eta’ che mostra crescenti valori di vulnerabilità e sulla quale è necessario intervenire con <strong>competenze specialistiche</strong>, in funzione educativa e preventiva delle fragilita’ legate alla sedentarietà, alle problematiche comportamentali e relazionali, con un approccio che sappia <strong>stimolare gli aspetti motori al pari di quelli cognitivi, emozionali e personologici.</strong></p>
-                    <p>Il ruolo dell’<strong>insegnante di arti marziali, esperto in area infantile,</strong> assume un valore di supporto alla genitorialità, al sistema scolastico e socio-sanitario, capace di accompagnare il bambino in un percorso di <strong>maturazione psicofisica equilibrata</strong>, che transita attraverso la motricità, il potenziamento dei <strong>prerequisiti di apprendimento</strong>, della <strong>socializzazione</strong> e della <strong>disciplina</strong>.</p>
+                    <!-- <p>Il ruolo dell’<strong>insegnante di arti marziali, esperto in area infantile,</strong> assume un valore di supporto alla genitorialità, al sistema scolastico e socio-sanitario, capace di accompagnare il bambino in un percorso di <strong>maturazione psicofisica equilibrata</strong>, che transita attraverso la motricità, il potenziamento dei <strong>prerequisiti di apprendimento</strong>, della <strong>socializzazione</strong> e della <strong>disciplina</strong>.</p> -->
                 </div>
             </div>
         </div>
     </section>
     
+    <section id="perche" class="p-section">
+        <div class="container">
+            <div class="d-flex flex-md-row flex-column align-items-center">
+                <div class="d-flex flex-column w-100">
+                    <h2 class="text-violet">Risposta all'esigenza e linee di intervento</h2>
+                    <p>In questo quadro, il ruolo dell’insegnante, esperto in area infantile, assume un <strong>valore di supporto alla
+                    genitorialità, al sistema scolastico e socio-sanitario</strong>, capace di accompagnare il bambino in un
+                    percorso di <strong>maturazione psicofisica equilibrata</strong>, che transita attraverso la riconquista del valore del
+                    contatto, delle relazioni e della disciplina, nel periodo evolutivo in cui i suoi comportamenti vengono fissati
+                    a livello psicognitivo.</p>
+                    <div class="img-perche d-block d-md-none">
+                        <img src="images/bambino-per-mano.jpg" class="img-fluid" alt="Bambino per mano">
+                    </div>
+                    <p>E’ essenziale che il bagaglio didattico venga calzato sulle <strong>caratteristiche peculiari della seconda
+                    infanzia</strong> e si arricchisca di <strong>competenze trasversali</strong> che affondano le radici nell’area pedagogica,
+                    neuropsicomotoria e comunicativa.</p>
+                </div>
+                <div class="p-md-5 d-none d-md-block">
+                    <div class="img-perche">
+                        <img src="images/bambino-per-mano.jpg" class="img-fluid" alt="Bambino per mano">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section id="piattaforma" class="p-section text-center">
+    <section id="piattaforma" class="p-section text-center bg-light-gray">
         <div class="container">
         <div class="row">
             <div class="col">
@@ -134,14 +169,14 @@
     <section id="relatori" class="p-section bg-dark-gray text-white">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 d-flex flex-column justify-content-center text-left">
+                <div class="col-md-8 d-flex flex-column justify-content-center text-left mb-2 mb-md-0">
                     <h2>I relatori</h2>
                     <p>I più grandi esperti in ambito scientifico, sportivo, sanitario e pedagogico, per un'osservazione multi-dimensionale del bambino</p>
                     <a href="relatori.php" class="btn btn-primary">Conosci i relatori</a>
                 </div>
-                <div class="col-md-6 p-5 text-center">
-                <video id="video-relatori" autoplay muted>
-                    <source src="https://www.dropbox.com/s/2cod0rhyizna2oh/relatori-home.mp4?raw=1#t=0.5" type="video/mp4">
+                <div class="col-md-4 text-center">
+                <video id="video-relatori" autoplay loop muted playsinline >
+                    <source src="assets/video/video-relatori.mp4" type="video/mp4" mute>
                     Your browser does not support the video tag.
                 </video>
                 </div>
@@ -153,20 +188,38 @@
     <!-- SEZIONE A CHI SONO RIVOLTI I CORSI -->
     <section id="chi" class="p-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="images/partecipanti.jpeg" class="img-fluid" style="width:100%" alt="">
+            <div class="d-flex flex-column flex-md-row align-items-md-center">
+                <div class="w-md-50 p-4">
+                    <img src="images/partecipanti.jpeg" class="img-fluid"  alt="">
                 </div>
-                <div class="col-md-6 p-5 pl-5 p-md-0" style="padding-left: 50px!important;">
-                    <h2 class="text-violet title-rivolti">A chi sono rivolti i corsi</h2>
-                    <ul style="list-rivolti">
-                        <li>Insegnanti e tesserati (>18 anni) della FIJLKAM</li>
-                        <li>Insegnanti e tesserati di altre Federazioni sportive, Enti di promozione sportiva e discipline sportive associate</li>
-                        <li>Corpo docente scolastico</li>
-                        <li>Insegnanti di sostegno</li>
-                        <li>Operatori di area educativa / riabilitativa</li>
-                        <li>Studenti e docenti di area motoria, educativa, socio-psicopedagogica</li>
-                    </ul>
+                <div class="w-md-50 ml-md-4">
+                    <h2 class="text-violet title-rivolti mt-3 mt-md-0">A chi sono rivolti i corsi</h2>
+                    <div class="d-flex flex-column check">
+                        <div class="d-flex flex-row align-items-center">
+                            <img src="images/check.png" alt="Icona compreso" />
+                            <p>Insegnanti tecnici di tutte le discipline della FIJLKAM</p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center">
+                            <img src="images/check.png" alt="Icona compreso" />
+                            <p>Tesserati con la Fijlkam, maggiori di 18 anni</p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center">
+                            <img src="images/check.png" alt="Icona compreso" />
+                            <p>Corpo docente scolastico</p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center">
+                            <img src="images/check.png" alt="Icona compreso" />
+                            <p>Insegnanti di sostegno</p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center">
+                            <img src="images/check.png" alt="Icona compreso" />
+                            <p>Operatori di area educativa / riabilitativa</p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center">
+                            <img src="images/check.png" alt="Icona compreso" />
+                            <p>Studenti e docenti di area motoria, educativa, socio-psicopedagogica</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,47 +230,47 @@
     <section id="obiettivi" class="p-section text-center bg-dark-gray text-white">
         <div class="container">
             <div class="row">
-                <div class="col mb-5">
+                <div class="col mb-3">
                     <h2>Obiettivi del percorso formativo</h2>
                     <p class="text-center">Il percorso di formazione conferisce ai corsisti gli strumenti pratici e teorici utili a:</p>
                 </div>
             </div>
             <!-- GRIGLIA PERCORSO -->
             <div class="grid">
-                <div class="grid-item">
-                    <i class="fa-solid fa-child"></i>
+                <div class="d-flex grid-item">
+                    <div class="icon"><i class="fa-solid fa-child"></i></div>
                     <p>Acquisire competenze specialistiche nella didattica, la gestione e l’organizzazione di corsi e classi di bambini in eta’ prescolare (3-5 anni)</p>
                 </div>
-                <div class="grid-item">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="d-flex grid-item">
+                    <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
                     <p>Rilevare gli indicatori di eventuali fragilità/disturbi del bambino</p>
                 </div>
-                <div class="grid-item">
-                    <i class="fa-solid fa-gears"></i>
+                <div class="d-flex grid-item">
+                    <div class="icon"><i class="fa-solid fa-gears"></i></div>
                     <p>Pianificare strategie di intervento preventivo / educativo</p>
                 </div>
-                <div class="grid-item">
-                    <i class="fa-solid fa-lightbulb"></i>
+                <div class="d-flex grid-item">
+                    <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
                     <p>Ampliare la propria offerta formativa e il bacino di utenza della propria società sportiva</p>
                 </div>
-                <div class="grid-item">
-                    <i class="fa-solid fa-location-crosshairs"></i>
+                <div class="d-flex grid-item">
+                    <div class="icon"><i class="fa-solid fa-location-crosshairs"></i></div>
                     <p>Distinguersi sul mercato</p>
                 </div>
-                <div class="grid-item">
-                    <i class="fa-solid fa-rocket"></i>
+                <div class="d-flex grid-item">
+                    <div class="icon"><i class="fa-solid fa-rocket"></i></div>
                     <p>Aumentare il numero di iscritti della propria società sportiva</p>
                 </div>
-                <div class="grid-item">
-                    <i class="fa-solid fa-leaf"></i>
+                <div class="d-flex grid-item">
+                    <div class="icon"><i class="fa-solid fa-leaf"></i></div>
                     <p>Costituire precocemente il vivaio a supporto delle successive classi giovanili</p>
                 </div>
-                <div class="grid-item">
-                    <i class="fa-solid fa-handshake"></i>
+                <div class="d-flex grid-item">
+                    <div class="icon"><i class="fa-solid fa-handshake"></i></div>
                     <p>Favorire sinergie interprofessionali tra le aree sport, scuola, sanità, welfare</p>
                 </div>
-                <div class="grid-item">
-                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                <div class="d-flex grid-item">
+                    <div class="icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
                     <p>Ottenere finanziamenti per lo sviluppo delle progettualità</p>
                 </div>
             </div>
@@ -228,36 +281,40 @@
 
 
 <!-- SEZIONE PERCORSO FORMATIVO -->
-<section id="percorso" class="pb-0">
-    <div class="container p-section--top">
+<section id="percorso">
+    <div class="container p-section-top">
         <div class="row text-center">
             <h2 class="text-green">Il percorso formativo</h2>
             <p class="text-center">
-                Il percorso di formazione è strutturato in modalità mista.<br>
-                Si compone di <strong>due moduli progressivi</strong> e da <strong>Master Class di aggiornamento tematico:</strong>
+                Per tutti i corsisti tesserati con la Fijlkam, il percorso formativo è strutturato come segue:
             </p>
         </div>
 
-        <div class="metodi row text-center">
-            <div class="col-md-3">
+        <div class="metodi text-center d-flex flex-column flex-md-row justify-items-center">
+            <div class="d-flex flex-column align-items-center">
                 <i class="fa-solid fa-laptop"></i>
                 <h3>E-LEARNING</h3>
                 <p>Formazione a distanza, asincrona, con accesso 24 ore su 24, con password personale e test di sbarramento</p>
             </div>
-            <div class="col-md-3">
-                <i class="fa-solid fa-child-reaching"></i>
-                <h3>METODO</h3>
-                <p>Descrizione delle aree e della metodologia di intervento, con ampio archivio - video dei giochi</p>
-            </div>
-            <div class="col-md-3">
+            <div class="d-flex flex-column align-items-center">
                 <i class="fa-solid fa-book"></i>
                 <h3>APPLICAZIONE</h3>
-                <p>Applicazione pratica dei contenuti e compilazione di un diario di bordo.</p>
+                <p>Svolgimento del tirocinio con i bambini in età prescolare, applicando le metodologie apprese nella parte on line</p>
             </div>
-            <div class="col-md-3">
+            <div class="d-flex flex-column align-items-center">
+                <img src="images/icona-bimbi.png">
+                <h3>DIARIO DI BORDO</h3>
+                <p>Compilazione di un report delle esperienze pratiche</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
                 <i class="fa-solid fa-users"></i>
-                <h3>FULL IMMERSION</h3>
-                <p>Un weekend Full immersion presso il Centro Olimpico Federale o inter-centri Regionali, in base alle disposizioni della FIJLKAM</p>
+                <h3>CLINIC</h3>
+                <p>Un week-end full immersion in presenza in una struttura regionale</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <img src="images/icona-esame.png">
+                <h3>ESAME</h3>
+                <p>Svolgimento di un esame teorico-pratico, a conclusione della Clinic</p>
             </div>
         </div>
 
@@ -265,26 +322,21 @@
             <div class="tl p-section">
                 <div class="timeline">
                     <span class="cap">1</span>
-                    <h4>OPERATORE DELLE DISCIPLINE FEDERALI PER L'INFANZIA</h4>
+                    <h2>AGGIORNAMENTO CONTINUO</h2>
+                    <p>Il percorso formativo conferirà ai corsisti la possibilità di tenersi sempre aggiornati attraverso:</p>
                     <span class="spacer"></span>
                     <p>
-                        1° anno di pratica<br>
-                        +<br>
-                        1° modulo di aggiornamento
+                        Webinar specialistici on line su piattaforma EduTraining Class
                     </p>
                     <span class="spacer"></span>
                     <p>
-                        2° anno di pratica<br>
-                        +<br>
-                        2° modulo di aggiornamento
+                        Corsi di aggiornamento tematici presso i Comitati Regionali
                     </p>
                     <span class="spacer"></span>
-                    <span class="cap">2</span>
-                    <h4>EDUCATORE DELLE DISCIPLINE FEDERALI PER L'INFANZIA E I BES</h4>
-                    <span class="spacer"></span>
-                    <p>Long life practicing and learning: Aggiornamento permanente e pratica continua</p>
-                    <span class="spacer"></span>
-                    <a href="iscriviti.php" class="btn btn-primary">Inizia il tuo percorso</a>
+                    <p>
+                        Eventi e Lab tematici
+                    </p>
+                    <a href="iscriviti.php" class="btn btn-primary mt-3">Inizia il tuo percorso</a>
                 </div>
             </div>
             <div class="judoka">
@@ -357,16 +409,15 @@
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            PER GLI INSEGNANTI FIJLKAM
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            INSEGNANTI TECNICI DELLA FIJLKAM
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <h5>Abilitazioni e attestati</h5>
                             <div class="riconoscimento">
                                 <div class="riconoscimento-desc">
-                                    Abilitazione di "Operatore delle discipline federali per l'infanzia"
+                                    Attestato nazionale di Specializzazione nella Didattica delle Discipline Federali per l’Infanzia
                                 </div>
                                 <div class="riconoscimento-icon">
                                     <i class="bi bi-check-circle-fill"></i>
@@ -374,16 +425,7 @@
                             </div>
                             <div class="riconoscimento">
                                 <div class="riconoscimento-desc">
-                                    Abilitazione di "Educatore delle discipline federali per l'infanzia e i BES"
-                                </div>
-                                <div class="riconoscimento-icon">
-                                    <i class="bi bi-check-circle-fill"></i>
-                                </div>
-                            </div>
-                            <h5>Ottieni anche...</h5>
-                            <div class="riconoscimento">
-                                <div class="riconoscimento-desc">
-                                    Inserimento nei quadri degli insegnanti specializzati nella didattica infantile
+                                    Inserimento nel registro Nazionale Indicizzato degli specialisti di area infantile (sez. Insegnanti Tecnici)
                                 </div>
                                 <div class="riconoscimento-icon">
                                     <i class="bi bi-check-circle-fill"></i>
@@ -391,7 +433,7 @@
                             </div>
                             <div class="riconoscimento">
                                 <div class="riconoscimento-desc">
-                                    Crediti formativi Fijlkam validi per corsi regionali e nazionali
+                                    Diritto di prelazione per la partecipazione a bandi e progetti federali di area educativa/infantile
                                 </div>
                                 <div class="riconoscimento-icon">
                                     <i class="bi bi-check-circle-fill"></i>
@@ -399,37 +441,27 @@
                             </div>
                             <div class="riconoscimento">
                                 <div class="riconoscimento-desc">
-                                    Scontistica e diritto di prelazione nell'accesso alle graduatorie dei bandi federali
+                                5 Crediti formativi Fijlkam
                                 </div>
                                 <div class="riconoscimento-icon">
                                     <i class="bi bi-check-circle-fill"></i>
                                 </div>
                             </div>
-                            <div class="riconoscimento">
-                                <div class="riconoscimento-desc">
-                                    Crediti universitari con facoltà aderenti ai protocolli d'intesa
-                                </div>
-                                <div class="riconoscimento-icon">
-                                    <i class="bi bi-check-circle-fill"></i>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
+                
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            PER GLI ALTRI CORSISTI
+                            TESSERATI FIJLKAM > 18 ANNI
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <h5>Attestati</h5>
                             <div class="riconoscimento">
                                 <div class="riconoscimento-desc">
-                                    <h6>Attestato di partecipazione:</h6>
-                                    "Approccio psicomotorio e metodologia didattica per bambini di 3-5 anni"
+                                Attestato nazionale di partecipazione, dal titolo: «Approccio neuropsicomotorio e metodologia didattica per bambini di 3-5 anni». Tale attestato, su richiesta del soggetto interessato da inoltrarsi all’ufficio formazione della Fijlkam, potrà essere convertito nell’attestato di SPECIALIZZAZIONE una volta acquisita la qualifica minima di aspirante allenatore federale.
                                 </div>
                                 <div class="riconoscimento-icon">
                                     <i class="bi bi-check-circle-fill"></i>
@@ -437,17 +469,7 @@
                             </div>
                             <div class="riconoscimento">
                                 <div class="riconoscimento-desc">
-                                    <h6>Attestato di partecipazione:</h6>
-                                    "Approccio psicomotorio e metodologia didattica per bisogni educativi in età prescolare"
-                                </div>
-                                <div class="riconoscimento-icon">
-                                    <i class="bi bi-check-circle-fill"></i>
-                                </div>
-                            </div>
-                            <h5>Ottieni anche...</h5>
-                            <div class="riconoscimento">
-                                <div class="riconoscimento-desc">
-                                    Crediti formativi Fijlkam validi per corsi regionali e nazionali
+                                    Inserimento nel registro Nazionale Indicizzato dei corsisti, sez. tesserati FIJLKAM
                                 </div>
                                 <div class="riconoscimento-icon">
                                     <i class="bi bi-check-circle-fill"></i>
@@ -455,7 +477,27 @@
                             </div>
                             <div class="riconoscimento">
                                 <div class="riconoscimento-desc">
-                                    Scontistica e diritto di prelazione nell'accesso alle graduatorie dei bandi federali
+                                    5 Crediti formativi Fijlkam
+                                </div>
+                                <div class="riconoscimento-icon">
+                                    <i class="bi bi-check-circle-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            PER GLI ALTRI CORSISTI
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="riconoscimento">
+                                <div class="riconoscimento-desc">
+                                Attestato di partecipazione rilasciato da Educajudo, dal titolo: «Approccio neuropsicomotorio e metodologia didattica per bambini di 3-5 anni»
                                 </div>
                                 <div class="riconoscimento-icon">
                                     <i class="bi bi-check-circle-fill"></i>
@@ -463,7 +505,7 @@
                             </div>
                             <div class="riconoscimento">
                                 <div class="riconoscimento-desc">
-                                    Crediti universitari con facoltà aderenti ai protocolli d'intesa
+                                Inserimento nel registro Nazionale Indicizzato dei corsisti, sez. ALTRI CORSISTI (solo parte online)
                                 </div>
                                 <div class="riconoscimento-icon">
                                     <i class="bi bi-check-circle-fill"></i>
@@ -483,10 +525,16 @@
 <!-- /SEZIONE QUALIFICHE -->
 
 
-<section class="regolamento p-section text-center pb-0" id="regolamento" style="background-color: #515664;">
-    <h2 class="text-white;">Regolamento e programma</h2>
-    <p class="text-white text-center" style="text-align:center!important;">Sfoglia e/o scarica il PDF</p>
-    <iframe style="min-height:500px; width: 100%;" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fzh96mpx2" class="embed-responsive embed-responsive-1by1 h-100" seamless="seamless" scrolling="no" frameborder="0" allowfullscreen=""></iframe>
+<section id="assistenza" class="p-section text-center">
+    <div class="container">
+        <h2 class="text-white">Assistenza e risorse</h2>
+        <div class="link-assistenza d-flex flex-column flex-md-row align-items-center">
+            <a href="#">Programma e regolamento</a>
+            <a href="#">Guida alla navigazione in piattaforma</a>
+            <a href="#">FAQ</a>
+            <a href="#">Diario di bordo del tirocinio</a>
+        </div>
+    </div>
 </section>
 
 

@@ -1,8 +1,4 @@
-﻿
-@{
-    ViewBag.Title = "Info Corso";
-    Layout = "~/Views/Shared/_LayoutMyArea.cshtml";
-}
+﻿<?php include 'header.php'; ?>
 
 <!-- two columns -->
 <div class="container">
@@ -238,3 +234,5 @@
         </aside>
     </div>
 </div>
+
+<?php include 'footer.php'; ?>

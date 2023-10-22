@@ -1,11 +1,4 @@
-﻿@{
-    ViewBag.Title = "Login";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-    string lingua = HttpContext.Current.Request.RequestContext.RouteData.Values["lingua"].ToString().ToLower();
-}
-
-
-<section id="home" style="height:60vh; min-height:800px; background-image: url('/assetsimages/bg-primary.jpeg');" class="d-flex flex-column justify-content-center">
+﻿<section id="home" style="height:60vh; min-height:800px; background-image: url('/assetsimages/bg-primary.jpeg');" class="d-flex flex-column justify-content-center">
     <div class="container">
         <h1>Accedi</h1>
     </div>
@@ -32,39 +25,34 @@
     <button class="w-50 btn btn-lg btn-primary mt-2" type="submit">Entra</button>
 </form>
 
+<script>
+    var request;
+    $("#login").submit(function (event) {
 
+        event.preventDefault();
+        if (request) { request.abort(); }
+        var $form = $(this);
+        var $inputs = $form.find("input, select");
+        var serializedData = $form.serialize();
+        $inputs.prop("disabled", true);
 
-
-@section scripts{
-    <script>
-        var request;
-        $("#login").submit(function (event) {
-
-            event.preventDefault();
-            if (request) { request.abort(); }
-            var $form = $(this);
-            var $inputs = $form.find("input, select");
-            var serializedData = $form.serialize();
-            $inputs.prop("disabled", true);
-
-            request = $.ajax({
-                url: "/@lingua/auth/",
-                type: "post",
-                data: serializedData
-            });
-
-            request.done(function (response, textStatus, jqXHR) {
-                window.location = "/myarea/";
-            });
-
-            request.fail(function (jqXHR, textStatus, errorThrown) {
-                $("#errore").show();
-            });
-
-            request.always(function () {
-                $inputs.prop("disabled", false);
-            });
-
+        request = $.ajax({
+            url: "/@lingua/auth/",
+            type: "post",
+            data: serializedData
         });
-    </script>
-}
+
+        request.done(function (response, textStatus, jqXHR) {
+            window.location = "/myarea/";
+        });
+
+        request.fail(function (jqXHR, textStatus, errorThrown) {
+            $("#errore").show();
+        });
+
+        request.always(function () {
+            $inputs.prop("disabled", false);
+        });
+
+    });
+</script>

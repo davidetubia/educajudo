@@ -1,8 +1,4 @@
-﻿
-@{
-    ViewBag.Title = "Presentazione Parte Pratica";
-    Layout = "~/Views/Shared/_LayoutMyArea.cshtml";
-}
+﻿<?php include 'header.php'; ?>
 
 <div class="pt-2" style="margin-top: 75px;">
     <div class="d-flex align-items-center">
@@ -27,6 +23,8 @@
         </div>
     </div>
 </div>
+
+<!-- SCRIPT NON RICONOSCIUTO
 @section scripts{
     <script type='text/javascript'>
         document.getElementById('video-corso').addEventListener('ended', passaavantiHandler, false);
@@ -35,3 +33,6 @@
         }
     </script>
 }
+-->
+
+<?php include 'footer.php'; ?>

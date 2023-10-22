@@ -1,12 +1,8 @@
-﻿
-@{
-    ViewBag.Title = "feedback";
-    Layout = "~/Views/Shared/_LayoutMyArea.cshtml";
-}
+﻿<?php include 'header.php'; ?>
 
-    <form class="rating">
+<form class="rating">
 
-<div class="container mt-100">
+<div class="container mt-5">
     <h1>VALUTA LA TUA ESPERIENZA DI FORMAZIONE</h1>
 
 <style>
@@ -110,3 +106,6 @@
 <script>
     document.getElementByClassName("disclaimer").style.width = "100%";
 </script>
+
+<?php include 'footer.php'; ?>
+<?php include '../footer.php'; ?>
