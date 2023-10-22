@@ -19,10 +19,14 @@
                     </div>
                     <hr>
                     <div class="text-right">
-                        Totale: 
+                        Totale: <span class="totale-checkout">€ 249,00</span>
                     </div>
                 </div>
+
                 <input type="submit" class="btn btn-primary mt-3" value="Completa l'acquisto">
+                <div class="mt-5">
+                    Pagamento sicuro e garantito tramite Stripe®
+                </div>
             </form>
         </div>
     </div>

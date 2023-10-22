@@ -251,12 +251,23 @@ p {
   }
 }
 #checkout {
-  background-image: url('images/checkout.png');
+  background-image: url('../../images/checkout.jpg');
   background-size: cover;
-  background-position: bottom center;
+  background-position: left center;
   background-color: black;
   padding-top: 40px;
-  min-height: 550px;
+  min-height: 600px;
+}
+#checkout h1 {
+  color: white;
+  line-height: 40px;
+  text-shadow: 0px 0px 20px black;
+}
+@media only screen and (max-width: 600px) {
+  #checkout h1 {
+    font-size: 32px!important;
+    line-height: 38px!important;
+  }
 }
 @media only screen and (max-width: 600px) {
   #checkout {
@@ -517,8 +528,8 @@ html {
 }
 @media only screen and (max-width: 600px) {
   #relatori .grid {
-    gap: 10px;
-    -ms-grid-columns: 1fr 10px 1fr;
+    gap: 5px;
+    -ms-grid-columns: 1fr 5px 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -541,6 +552,12 @@ html {
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.167);
   min-height: 200px;
 }
+#relatori .grid .grid-item .btn {
+  font-size: 12px;
+}
+#relatori .grid .grid-item img {
+  width: 100%;
+}
 @media only screen and (max-width: 600px) {
   #relatori .grid .grid-item {
     padding: 20px;
@@ -554,14 +571,7 @@ html {
   margin: 0px;
   padding: 0px;
   color: #7e3f95;
-}
-#relatori .grid .grid-item .relatore-body a {
-  text-decoration: none;
-  float: left;
-}
-#relatori .grid .grid-item .relatore-body a::after {
-  content: '>';
-  float: right;
+  line-height: 24px;
 }
 #home {
   height: 100vh;
@@ -1155,5 +1165,21 @@ footer ul li {
 }
 .text-left {
   text-align: left!important;
+}
+.totale-checkout {
+  font-weight: bold;
+  color: #8cc547;
+  font-size: 24px;
+}
+.video-pre-corso {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.238);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.238);
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.video-pre-corso .info {
+  padding-left: 30px;
 }
 /*# sourceMappingURL=lp.css.map */
