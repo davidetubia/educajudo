@@ -27,7 +27,7 @@
 <body>
 
 <header class="fixed-top">
-    <div class="container d-flex align-items-center">
+    <div class="container-md d-flex align-items-center">
         <div class="flex-grow-1">
             <a href="/educajudo"><img src="../images/edutraining-green.png" id="logo" alt="Logo Fijlkam ed Educajudo"></a>
         </div>

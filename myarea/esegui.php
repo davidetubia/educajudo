@@ -1,6 +1,6 @@
 ﻿<?php include 'header.php'; ?>
 <!-- @_d.ID-->
-<div class="container-corso d-flex flex-grow-1 rotation-required">
+<div class="container-corso d-flex flex-grow-1 rotation-required mt-4">
     <article style="text-align:center">
             <a href="/myarea/mycorsi/next">
                 <img src="../slides/1.jpg" alt="@_d.Titolo" style="margin-top:0px;width:100%" id="immaginislide">
