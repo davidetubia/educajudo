@@ -3,7 +3,7 @@
             <div class="row gy-4 gx-5">
                 <div class="col-lg-4 footer-left d-flex flex-column">
                     <small>PIATTAFORMA</small>
-                    <img src="/educajudo/images/edutraining-white.png" alt="Logo di Educajudo">
+                    <img src="/educajudo/images/logo-edutraining-class.png" alt="Logo di Educajudo">
                     <p class="text-small">
                         Redazione c/o Studio Legale Avv. Fabio Della Moglie<br>
                         Via Loggia dei Pisani n.25 - 80133 NAPOLI<br>

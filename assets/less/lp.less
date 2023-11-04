@@ -13,6 +13,15 @@ body, html{
     overflow-x: hidden;
 }
 
+#fine-corso{
+    h2{
+        font-size: 28px!important;
+    }
+    p{
+        font-size:12px!important;
+        line-height: 20px!important;
+    }
+}
 
 #obiettivi{
 .grid{
@@ -93,7 +102,7 @@ body, html{
                 width: 100%;
             }
             @media only screen and (max-width: 600px) {
-                padding: 20px;
+                padding: 0px;
                 min-height: auto;
             }
             .relatore-body{
@@ -103,7 +112,12 @@ body, html{
                     padding: 0px;
                     color: @viola;
                     line-height: 24px;
+                    @media only screen and (max-width: 600px) {
+                        font-size: 18px!important;
+                        min-height: auto;
+                    }
                 }
+                
             }
         }
     }
@@ -184,7 +198,11 @@ body, html{
         }
         #logo-ijf{
             margin-left: 10px;
-            max-height: 30px!important;
+            max-height: 40px!important;
+        }
+        #logo-anupi{
+            font-size: 23px!important;
+            font-weight: 300!important;
         }
     }
 
@@ -312,6 +330,9 @@ a.anchor {
             font-size: 1.8rem;
             line-height: 2rem;
         }
+    }
+    p{
+        text-align: center!important;
     }
     .spacer{
         display: block;
@@ -484,11 +505,12 @@ a.anchor {
                 margin-bottom: 10px;
             }
             .riconoscimento-desc{
-                width: 70%;
+                width: 80%;
+                line-height: 22px;
             }
             .riconoscimento-icon{
                 text-align: center;
-                width: 30%;
+                width: 20%;
                 color: @verde;
                 font-size: 40px;
             }
@@ -501,7 +523,7 @@ a.anchor {
 }
 
 #assistenza{
-    background-color: black;
+    background-color: rgb(61, 61, 61);
     .link-assistenza{
         gap: 10px;
         a{
@@ -590,10 +612,12 @@ footer{
   input {
     display: block;
     position: absolute;
+    font-size: 12px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    text-align: center;
   }
   
   input[type="radio"] {
@@ -609,6 +633,7 @@ footer{
   label {
     padding: 5px;
     border: 1px solid #CCC;
+    background-color: rgb(203, 255, 252);
     cursor: pointer;
     z-index: 90;
   }
@@ -657,8 +682,17 @@ footer{
     border-radius: 10px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.238);
     margin-bottom: 10px;
-    padding: 20px;
+    overflow: hidden;
+    iframe{
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+    h4{
+        font-weight: normal!important;
+    }
     .info{
-        padding-left: 30px;
+        padding: 20px;
     }
 }
+

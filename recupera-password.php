@@ -4,7 +4,7 @@
     <div class="row py-5 d-md-flex align-items-md-center login-register">
         <div class="col-12 col-md-4">
             <h2 class="text-violet">Recupero password</h2>
-            <p>Registrati per accedere a tutte le funzionalità della piattaforma</p>
+            <p>Inserisci la tua e-mail per recuperare le tue credenziali</p>
         </div>
         <div class="col-12 col-md-8">
             <div class="rounded-box-shadow p-4 p-md-5">

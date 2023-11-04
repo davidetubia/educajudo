@@ -2,10 +2,12 @@
 
 <div class="container mt-5">
     <div class="row">
-    <div class="col-12 col-md-4">
-        <h1 class="text-violet">VALUTA LA TUA ESPERIENZA DI FORMAZIONE</h1>
+    <div class="col-12 col-xl-4">
+        <h1 class="text-violet">Valuta la tua<br>esperienza di formazione</h1>
+        <div class="my-3">
         <p>Caro/a corsista,<br>
-        ti chiediamo di compilare il seguente breve questionario che costituisce uno strumento prezioso per valutare l’attività svoltae migliorare le future iniziative.</p>
+        ti chiediamo di compilare il seguente breve questionario che costituisce uno strumento prezioso per valutare l’attività svolta e migliorare le future iniziative.</p>
+        </div>
     </div>
     <div class="col">
 <form class="rating">
@@ -35,7 +37,7 @@
                 </ul>
             </div>
 
-            <div class="domanda mb-3">
+            <div class="domanda mb-3 mt-5">
                 <p>Valuta in che misura la <strong>struttura didattica</strong> del corso (parte teorica, metodologica, applicativa: slide + spiegazione relatore + video immersivi + test di sbarramento + video pratici) sia stata idonea a favorire il tuo processo di apprendimento</p>
                 <ul class="voti">
                     <li>
@@ -57,7 +59,7 @@
                 </ul>
             </div>
 
-            <div class="domanda mb-3">
+            <div class="domanda mb-3 mt-5">
                 <p>Valuta in che misura gli <strong>argomenti trattati</strong> nel corso siano stati interessanti e coerenti con gli obbiettivi formativi</p>
                 <ul class="voti">
                     <li>
@@ -79,7 +81,7 @@
                 </ul>
             </div>
 
-            <div class="domanda mb-3">
+            <div class="domanda mb-3 mt-5">
                 <p>Valuta in che misura la qualità grafica/funzionale dei <strong>contenuti digitali</strong> del corso (landing page, slide, immagini, video relatori, test di sbarramento, video applicativi) abbiano reso piacevole il tuo percorso formativo</p>
                 <ul class="voti">
                     <li>
@@ -101,7 +103,7 @@
                 </ul>
             </div>
 
-            <div class="domanda mb-3">
+            <div class="domanda mb-3 mt-5">
                 <p>Valuta in che misura i <strong>contenuti di assistenza</strong> (regolamento e programma, guida alla navigazione in piattaforma, faq) siano idonei a supportare la fruibilità del corso</p>
                 <ul class="voti">
                     <li>
@@ -123,7 +125,7 @@
                 </ul>
             </div>
 
-            <div class="domanda mb-3">
+            <div class="domanda mb-3 mt-5">
                 <p>Valuta in che misura l’accessibilità h24 ai contenuti della piattaforma, la fruibilità sui diversi dispositivi digitali e la durata media delle lezioni abbiano reso godibile il tuo percorso formativo:</p>
                 <ul class="voti">
                     <li>
@@ -145,7 +147,7 @@
                 </ul>
             </div>
 
-            <div class="domanda mb-3">
+            <div class="domanda mb-3 mt-5">
                 <p>In che misura ritieni che il corso ti abbia fornito gli strumenti idonei ad affrontare e/o migliorare la didattica delle arti marziali e/o delle attività motorie per i bimbi di 3-5 anni?</p>
                 <ul class="voti">
                     <li>
@@ -167,7 +169,7 @@
                 </ul>
             </div>
 
-            <div class="domanda mb-3">
+            <div class="domanda mb-3 mt-5">
                 <p>In che misura ritieni che il corso ti abbia fornito gli strumenti idonei a favorire sviluppi di natura  lavorativa/economica legati all’attività infantile? </p>
                 <ul class="voti">
                     <li>
@@ -189,7 +191,7 @@
                 </ul>
             </div>
 
-            <div class="domanda mb-3">
+            <div class="domanda mb-3 mt-5">
                 <p>Sulla scorta di tutte le precedenti risposte che hai fornito, valuta ora complessivamente il corso di formazione EduTraining Class:</p>
                 <ul class="voti">
                     <li>
@@ -211,7 +213,7 @@
                 </ul>
             </div>
 
-            <div class="domanda mb-3">
+            <div class="domanda mb-3 mt-5">
                 <p>Sulla scorta di tutte le valutazioni che hai fornito e della tua eventuale esperienza in altri corsi di formazione, ritieni che il costo di EduTraining Class sia</p>
                 <ul class="voti">
                     <li>
@@ -243,8 +245,9 @@
         <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Scrivi qui i tuoi suggerimenti..."></textarea>
     </div>
 </div>
-
-<input type="submit" href="#" class="btn btn-primary mb-3 mt-3" value="Vai alla comunicazione finale">
+<div class="text-center">
+    <input type="submit" href="#" class="btn btn-primary mb-3 mt-3" value="Invia la valutazione">
+</div>
 
 </form>
 </div>

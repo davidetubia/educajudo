@@ -5,13 +5,14 @@ header {
   z-index: 999;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background-color: black;
+  background-color: #000000;
   padding: 10px 0px;
 }
 @media only screen and (max-width: 1000px) {
   header {
     position: relative;
     z-index: 999;
+    padding: 0px;
   }
 }
 header img {
@@ -251,7 +252,7 @@ p {
   }
 }
 #checkout {
-  background-image: url('../../images/checkout.jpg');
+  background-image: url('../../images/checkout.jpeg');
   background-size: cover;
   background-position: left center;
   background-color: black;
@@ -260,7 +261,8 @@ p {
 }
 #checkout h1 {
   color: white;
-  line-height: 40px;
+  line-height: 78px;
+  font-size: 72px!important;
   text-shadow: 0px 0px 20px black;
 }
 @media only screen and (max-width: 600px) {
@@ -273,6 +275,7 @@ p {
   #checkout {
     max-height: 20px;
     min-height: 400px;
+    background-position: right center;
   }
 }
 #checkout-info {
@@ -283,6 +286,21 @@ p {
 }
 .checkout-card {
   text-align: center;
+}
+.checkout-card h5 {
+  font-weight: bold;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+}
+.checkout-card ul {
+  padding: 0px!important;
+  margin: 0px!important;
+}
+.checkout-card ul li {
+  margin: 0px!important;
+  list-style: none;
+  padding: 0px;
 }
 .checkout-card .old-price {
   text-decoration: line-through;
@@ -350,7 +368,7 @@ p {
   padding: 0px 20px;
 }
 .dropdown-menu {
-  background-color: black!important;
+  background-color: #000000 !important;
   font-size: 14px!important;
 }
 .dropdown-item {
@@ -362,7 +380,7 @@ p {
   color: white!important;
 }
 #logo {
-  width: 200px;
+  height: 53px;
 }
 #immagine-profilo {
   height: 25px;
@@ -397,8 +415,9 @@ p {
 }
 @media only screen and (max-width: 600px) {
   p {
-    font-size: 18px!important;
-    line-height: 26px;
+    font-size: 15px!important;
+    line-height: 22px;
+    text-align: justify!important;
   }
 }
 h1 {
@@ -456,6 +475,13 @@ html {
   font-family: 'Lato', sans-serif;
   max-width: 100%;
   overflow-x: hidden;
+}
+#fine-corso h2 {
+  font-size: 28px!important;
+}
+#fine-corso p {
+  font-size: 12px!important;
+  line-height: 20px!important;
 }
 #obiettivi .grid {
   display: -ms-grid;
@@ -560,7 +586,7 @@ html {
 }
 @media only screen and (max-width: 600px) {
   #relatori .grid .grid-item {
-    padding: 20px;
+    padding: 0px;
     min-height: auto;
   }
 }
@@ -572,6 +598,12 @@ html {
   padding: 0px;
   color: #7e3f95;
   line-height: 24px;
+}
+@media only screen and (max-width: 600px) {
+  #relatori .grid .grid-item .relatore-body h2 {
+    font-size: 18px!important;
+    min-height: auto;
+  }
 }
 #home {
   height: 100vh;
@@ -656,7 +688,11 @@ html {
 }
 #home .loghi #logo-ijf {
   margin-left: 10px;
-  max-height: 30px!important;
+  max-height: 40px!important;
+}
+#home .loghi #logo-anupi {
+  font-size: 23px!important;
+  font-weight: 300!important;
 }
 #home .adopted-by {
   z-index: 1;
@@ -798,6 +834,9 @@ a.anchor {
     font-size: 1.8rem;
     line-height: 2rem;
   }
+}
+.timeline p {
+  text-align: center!important;
 }
 .timeline .spacer {
   display: block;
@@ -1021,11 +1060,12 @@ a.anchor {
   }
 }
 #qualifiche .accordion-body .riconoscimento .riconoscimento-desc {
-  width: 70%;
+  width: 80%;
+  line-height: 22px;
 }
 #qualifiche .accordion-body .riconoscimento .riconoscimento-icon {
   text-align: center;
-  width: 30%;
+  width: 20%;
   color: #8cc547;
   font-size: 40px;
 }
@@ -1034,7 +1074,7 @@ a.anchor {
   background-color: white;
 }
 #assistenza {
-  background-color: black;
+  background-color: #3d3d3d;
 }
 #assistenza .link-assistenza {
   gap: 10px;
@@ -1118,10 +1158,12 @@ footer ul li {
 .voti input {
   display: block;
   position: absolute;
+  font-size: 12px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  text-align: center;
 }
 .voti input[type="radio"] {
   opacity: 0.01;
@@ -1134,6 +1176,7 @@ footer ul li {
 .voti label {
   padding: 5px;
   border: 1px solid #CCC;
+  background-color: #cbfffc;
   cursor: pointer;
   z-index: 90;
 }
@@ -1177,9 +1220,17 @@ footer ul li {
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.238);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.238);
   margin-bottom: 10px;
-  padding: 20px;
+  overflow: hidden;
+}
+.video-pre-corso iframe {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1.77777778;
+}
+.video-pre-corso h4 {
+  font-weight: normal!important;
 }
 .video-pre-corso .info {
-  padding-left: 30px;
+  padding: 20px;
 }
 /*# sourceMappingURL=lp.css.map */

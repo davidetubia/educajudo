@@ -1,6 +1,6 @@
 ﻿<?php include 'header.php'; ?>
 
-<div id="checkout" class="d-flex align-items-center">
+<div id="checkout" class="d-flex align-items-end align-items-md-center">
     <div class="container">
         <h1>
             Diventa ora<br>
@@ -18,59 +18,64 @@
                     <h2>Cosa otterrai</h2>
                     <div class="d-flex align-items-center">
                         <img src="images/check.png" alt="Icona compreso" />
-                        <p>Acquisisci competenze specialistiche nella didattica per i bambini di 3, 4 e 5 anni</p>
+                        <p>Specifiche competenze nella didattica per i bambini di 3, 4 e 5 anni</p>
                     </div>
                     <div class="d-flex align-items-center">
                         <img src="images/check.png" alt="Icona compreso" />
-                        <p>Confrontati con grandi esperti del settore</p>
+                        <p>Attestati, crediti formativi e agevolazioni</p>
                     </div>
                     <div class="d-flex align-items-center">
                         <img src="images/check.png" alt="Icona compreso" />
-                        <p>Ottieni l'abilitazione o attestato, riconoscimenti e agevolazioni</p>
+                        <p>Iscrizione nel registro nazionale degli operatori sportivi di area infantile</p>
                     </div>
                     <div class="d-flex align-items-center">
                         <img src="images/check.png" alt="Icona compreso" />
-                        <p>Amplia la tua offerta formativa</p>
+                        <p>Ampliamento della tua offerta formativa </p>
                     </div>
                     <div class="d-flex align-items-center">
                         <img src="images/check.png" alt="Icona compreso" />
-                        <p>Distinguiti sul mercato</p>
+                        <p>Visibilità sul mercato</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="images/check.png" alt="Icona compreso" />
+                        <p>Strumenti per sinergie professionali e sviluppi lavorativi</p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-7">
                 <div class="cont-prezzi d-flex flex-column flex-md-row">
-                    <div class="card checkout-card">
-                        <div class="card-header bg-gray text-white">
-                            <h5>Entro il  31/12/2023</h5>
+                    <div class="card w-100 checkout-card">
+                        <div class="card-header bg-green text-white">
+                            <h5>Tesserati Fijlkam</h5>
                         </div>
                         <div class="card-body">
-                            <span class="old-price">€ 499,00*</span>
-                            <span class="new-price">€ 249,00*</span>
-                            <a href="registrati.php" class="btn btn-success btn-buy">PAGA ORA</a>
+                            <span class="old-price">€ 499,00</span>
+                            <span class="new-price">€ 250,00</span>
+                            <a href="registrati.php" class="btn btn-success btn-buy">ISCRIVITI ORA</a>
+                            <hr>
                             <p class="text-center">Pagamento sicuro<br>con carta di credito</p>
+                            <b class="mt-1">Accesso immediato</b>
                         </div>
                     </div>
-                    <div class="card checkout-card card-disabled">
-                        <div class="card-header bg-gray text-white">
-                            <h5>Entro il  31/01/2024</h5>
+                    <div class="card w-100 checkout-card">
+                        <div class="card-header bg-yellow text-white">
+                            <h5>Altri corsisti</h5>
                         </div>
                         <div class="card-body">
-                            <span class="old-price">€ 499,00*</span>
-                            <span class="new-price">€ 299,00*</span>
-                            <a href="registrati.php" class="btn btn-success btn-buy disabled">PAGA ORA</a>
+                            <span class="old-price">€ 499,00</span>
+                            <span class="new-price">€ 300,00</span>
+                            <a href="registrati.php" class="btn btn-success btn-buy">ISCRIVITI ORA</a>
+                            <div class="mt-3">
+                                il pagamento comprende:
+                                <ul>
+                                    <li>quota di iscrizione all'ASD Educajudo</li>
+                                    <li>il tesseramento con la Fijlkam</li>
+                                    <li>la copertura assicurativa</li>
+                                </ul>
+                            </div>
+                            <hr>
                             <p class="text-center">Pagamento sicuro<br>con carta di credito</p>
-                        </div>
-                    </div>
-                    <div class="card checkout-card card-disabled">
-                        <div class="card-header bg-gray text-white">
-                            <h5>Entro il  31/02/2024</h5>
-                        </div>
-                        <div class="card-body">
-                            <span class="old-price">€ 499,00*</span>
-                            <span class="new-price">€ 349,00*</span>
-                            <a href="registrati.php" class="btn btn-success btn-buy disabled">PAGA ORA</a>
-                            <p class="text-center">Pagamento sicuro<br>con carta di credito</p>
+                            <b class="mt-1">Accesso immediato</b>
                         </div>
                     </div>
                 </div>

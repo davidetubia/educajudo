@@ -29,7 +29,7 @@
 <header class="fixed-top">
     <div class="container-md d-flex align-items-center">
         <div class="flex-grow-1">
-            <a href="/educajudo"><img src="../images/edutraining-green.png" id="logo" alt="Logo Fijlkam ed Educajudo"></a>
+            <a href="/educajudo"><img src="../images/logo-edutraining-class.svg" id="logo" alt="Logo Fijlkam ed Educajudo"></a>
         </div>
         <div id="pulsantiCorso" class="hide">
             <a href="" class="pulsante-corso pulsante-multimedia" data-open="#video" data-close="#sezioni-corso"><i class="bi bi-camera-video"></i> Multimedia</a>
@@ -40,9 +40,8 @@
                     <i class="bi bi-person-fill"></i> Il tuo account
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="apprendimento.php"><i class="bi bi-speedometer2"></i> La tua dashboard</a></li>
+                    <li><a class="dropdown-item" href="apprendimento.php"><i class="bi bi-speedometer2"></i> Dashboard</a></li>
                     <li><a class="dropdown-item" href="myio.php"><i class="bi bi-person-fill"></i> Profilo</a></li>
-                    <li><a class="dropdown-item" href="profilazione.php"><i class="bi bi-person-fill"></i> Completa il tuo profilo</a></li>
                     <li><a class="dropdown-item" href="esegui.php"><i class="bi bi-play-btn-fill"></i> Riprendi il corso</a></li>
                     <!-- amministrazione
                     <li><hr class="dropdown-divider"></li>

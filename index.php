@@ -26,6 +26,10 @@
                     <span>Powered by</span>
                     <img src="images/logo-educajudo_2.png" alt="Logo Educajudo.it">
                 </div>
+                <div class="d-flex flex-column">
+                    <span>In partnership with</span>
+                    <h3 id="logo-anupi">ANUPI TNPEE</h3>
+                </div>
             </div>
 
         </div>
@@ -68,15 +72,15 @@
                     </div>
                 </div>
                 <div class="d-flex flex-column w-100">
-                    <h2 class="text-violet">Perchè EduTraining Class</h2>
+                    <h2 class="text-violet">Fabbisogno e<br>domanda di mercato</h2>
                     <div class="img-perche d-block d-md-none">
                         <img src="images/abuso-devices.jpeg" alt="">
                     </div>
-                    <p>L'esigenza di potenziamento dell'<strong>attività motoria per i bambini in età prescolare</strong>, in risposta alle misure restrittive per il contenimento del coronavirus e all’abuso precoce dello strumento digitale, rappresenta lo scenario che si sta presentando agli occhi di genitori, educatori, personale sanitario ed insegnanti dello sport.</p>
+                    <p>A seguito delle limitazioni e degli effetti della pandemia, le famiglie hanno fortemente avvertito la <b>necessità di anticipare il momento di esordio dell’attività motoria dei bambini, già a partire dai 3 anni,</b> determinando un <b>aumento imponente delle richieste di iscrizione</b> in palestra, nei centri sportivi e ludico-ricreativi.</p>
                     <div class="img-perche d-block d-md-none">
                         <img src="images/effetti-della-pandemia.jpg" alt="">
                     </div>
-                    <p>Una fascia di eta’ che mostra crescenti valori di vulnerabilità e sulla quale è necessario intervenire con <strong>competenze specialistiche</strong>, in funzione educativa e preventiva delle fragilita’ legate alla sedentarietà, alle problematiche comportamentali e relazionali, con un approccio che sappia <strong>stimolare gli aspetti motori al pari di quelli cognitivi, emozionali e personologici.</strong></p>
+                    <p><b>La fascia prescolare (3-5 anni)</b> rappresenta un periodo evolutivo estremamente delicato su cui è essenziale intervenire con <b>competenze specifiche</b>, in funzione educativa e preventiva delle <b>crescenti vulnerabilità</b>, con un approccio idoneo a <b>stimolare gli aspetti motori al pari di quelli cognitivi ed emozionali.</b></p>
                     <!-- <p>Il ruolo dell’<strong>insegnante di arti marziali, esperto in area infantile,</strong> assume un valore di supporto alla genitorialità, al sistema scolastico e socio-sanitario, capace di accompagnare il bambino in un percorso di <strong>maturazione psicofisica equilibrata</strong>, che transita attraverso la motricità, il potenziamento dei <strong>prerequisiti di apprendimento</strong>, della <strong>socializzazione</strong> e della <strong>disciplina</strong>.</p> -->
                 </div>
             </div>
@@ -87,18 +91,12 @@
         <div class="container">
             <div class="d-flex flex-md-row flex-column align-items-center">
                 <div class="d-flex flex-column w-100">
-                    <h2 class="text-violet">Risposta all'esigenza e linee di intervento</h2>
-                    <p>In questo quadro, il ruolo dell’insegnante, esperto in area infantile, assume un <strong>valore di supporto alla
-                    genitorialità, al sistema scolastico e socio-sanitario</strong>, capace di accompagnare il bambino in un
-                    percorso di <strong>maturazione psicofisica equilibrata</strong>, che transita attraverso la riconquista del valore del
-                    contatto, delle relazioni e della disciplina, nel periodo evolutivo in cui i suoi comportamenti vengono fissati
-                    a livello psicognitivo.</p>
+                    <h2 class="text-violet">Risposta all'esigenza<br/>e linee di intervento</h2>
+                    <p><b>L’operatore esperto in area infantile</b> assume un ruolo <b>di supporto alla genitorialità, al sistema scolastico e socio-sanitario</b>, capace di accompagnare il bambino in un percorso di <b>maturazione psicofisica equilibrata</b>, che transita attraverso la riconquista del contatto, del movimento, delle relazioni e della disciplina.</p>
                     <div class="img-perche d-block d-md-none">
                         <img src="images/bambino-per-mano.jpg" class="img-fluid" alt="Bambino per mano">
                     </div>
-                    <p>E’ essenziale che il bagaglio didattico venga calzato sulle <strong>caratteristiche peculiari della seconda
-                    infanzia</strong> e si arricchisca di <strong>competenze trasversali</strong> che affondano le radici nell’area pedagogica,
-                    neuropsicomotoria e comunicativa.</p>
+                    <p>E’ necessario che il bagaglio didattico venga calzato sulle <b>caratteristiche peculiari della seconda infanzia</b> e si arricchisca di <b>competenze trasversali</b> che affondano le radici nell’<b>area pedagogica, neuropsicomotoria e comunicativa.</b></p>
                 </div>
                 <div class="p-md-5 d-none d-md-block">
                     <div class="img-perche">
@@ -114,7 +112,7 @@
         <div class="row">
             <div class="col">
             <h2 class="text-violet">La piattaforma</h2>
-            <p class="text-center">Edu-Training Class è la <strong>prima piattaforma di formazione Evidence based</strong>, accessibile h/24, dedicata agli <strong>insegnanti di arti marziali e agli operatori di area motoria ed educativa</strong>, che intendano acquisire <strong>elevate competenze professionali</strong> nella didattica per i <strong>bambini dai 3 ai 5 anni.</strong> 
+            <p>Edutraining Class è la <strong>prima piattaforma di formazione Evidence Based</strong>, accessibile h/24, dedicata agli <strong>insegnanti di arti marziali e agli operatori di area motoria ed educativa</strong> che intendano acquisire <strong>elevate competenze professionali</strong> nella didattica per i <strong>bambini dai 3 ai 5 anni.</strong> 
 <br>Offre ai corsisti i seguenti contenuti:</p>
             </div>
         </div>
@@ -189,11 +187,12 @@
     <section id="chi" class="p-section">
         <div class="container">
             <div class="d-flex flex-column flex-md-row align-items-md-center">
-                <div class="w-md-50 p-4">
+                <div class="w-md-50 p-4 d-none d-md-block">
                     <img src="images/partecipanti.jpeg" class="img-fluid"  alt="">
                 </div>
                 <div class="w-md-50 ml-md-4">
                     <h2 class="text-violet title-rivolti mt-3 mt-md-0">A chi sono rivolti i corsi</h2>
+                    <img src="images/partecipanti.jpeg" class="d-block d-md-none img-fluid mb-3"  alt="">
                     <div class="d-flex flex-column check">
                         <div class="d-flex flex-row align-items-center">
                             <img src="images/check.png" alt="Icona compreso" />
@@ -202,6 +201,10 @@
                         <div class="d-flex flex-row align-items-center">
                             <img src="images/check.png" alt="Icona compreso" />
                             <p>Tesserati con la Fijlkam, maggiori di 18 anni</p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center">
+                            <img src="images/check.png" alt="Icona compreso" />
+                            <p>Insegnanti e tesserati (>18 anni) di altre Federazioni Sportive, Enti di Promozione Sportiva e Discipline Sportive Associate</p>
                         </div>
                         <div class="d-flex flex-row align-items-center">
                             <img src="images/check.png" alt="Icona compreso" />
@@ -239,11 +242,11 @@
             <div class="grid">
                 <div class="d-flex grid-item">
                     <div class="icon"><i class="fa-solid fa-child"></i></div>
-                    <p>Acquisire competenze specialistiche nella didattica, la gestione e l’organizzazione di corsi e classi di bambini in eta’ prescolare (3-5 anni)</p>
+                    <p>Acquisire specifiche competenze nella didattica, la gestione e l’organizzazione di corsi e classi di bambini in eta’ prescolare (3-5 anni)</p>
                 </div>
                 <div class="d-flex grid-item">
                     <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                    <p>Rilevare gli indicatori di eventuali fragilità/disturbi del bambino</p>
+                    <p>Rilevare gli indicatori di eventuali fragilità del bambino</p>
                 </div>
                 <div class="d-flex grid-item">
                     <div class="icon"><i class="fa-solid fa-gears"></i></div>
@@ -263,11 +266,11 @@
                 </div>
                 <div class="d-flex grid-item">
                     <div class="icon"><i class="fa-solid fa-leaf"></i></div>
-                    <p>Costituire precocemente il vivaio a supporto delle successive classi giovanili</p>
+                    <p>Costituire il vivaio a supporto delle successive classi giovanili</p>
                 </div>
                 <div class="d-flex grid-item">
                     <div class="icon"><i class="fa-solid fa-handshake"></i></div>
-                    <p>Favorire sinergie interprofessionali tra le aree sport, scuola, sanità, welfare</p>
+                    <p>Favorire sinergie interprofessionali tra le aree sport, scuola, sanità</p>
                 </div>
                 <div class="d-flex grid-item">
                     <div class="icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
@@ -284,9 +287,9 @@
 <section id="percorso">
     <div class="container p-section-top">
         <div class="row text-center">
-            <h2 class="text-green">Il percorso formativo</h2>
+            <h2 class="text-green">Struttura del corso</h2>
             <p class="text-center">
-                Per tutti i corsisti tesserati con la Fijlkam, il percorso formativo è strutturato come segue:
+                Il corso prevede le seguenti frasi
             </p>
         </div>
 
@@ -294,22 +297,22 @@
             <div class="d-flex flex-column align-items-center">
                 <i class="fa-solid fa-laptop"></i>
                 <h3>E-LEARNING</h3>
-                <p>Formazione a distanza, asincrona, con accesso 24 ore su 24, con password personale e test di sbarramento</p>
-            </div>
-            <div class="d-flex flex-column align-items-center">
-                <i class="fa-solid fa-book"></i>
-                <h3>APPLICAZIONE</h3>
-                <p>Svolgimento del tirocinio con i bambini in età prescolare, applicando le metodologie apprese nella parte on line</p>
+                <p>Formazione a distanza, asincrona, con accesso riservato h24 e test di sbarramento</p>
             </div>
             <div class="d-flex flex-column align-items-center">
                 <img src="images/icona-bimbi.png">
+                <h3>TIROCINIO</h3>
+                <p>10 lezioni pratiche con i bambini in età prescolare, applicando le metodologie apprese nella parte on line</p>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <i class="fa-solid fa-book"></i>
                 <h3>DIARIO DI BORDO</h3>
-                <p>Compilazione di un report delle esperienze pratiche</p>
+                <p>Report delle 10 lezioni, su form precompilato</p>
             </div>
             <div class="d-flex flex-column align-items-center">
                 <i class="fa-solid fa-users"></i>
                 <h3>CLINIC</h3>
-                <p>Un week-end full immersion in presenza in una struttura regionale</p>
+                <p>Full immersion in presenza, di sabato, in uno degli eventi laboratoriali suddivisi per macroaree territoriali </p>
             </div>
             <div class="d-flex flex-column align-items-center">
                 <img src="images/icona-esame.png">
@@ -320,9 +323,8 @@
 
         <div id="percorso-timeline">
             <div class="tl p-section">
-                <div class="timeline">
-                    <span class="cap">1</span>
-                    <h2>AGGIORNAMENTO CONTINUO</h2>
+                <div class="timeline px-5 px-md-0">
+                    <h2 class="mb-5">Aggiornamento permanente</h2>
                     <p>Il percorso formativo conferirà ai corsisti la possibilità di tenersi sempre aggiornati attraverso:</p>
                     <span class="spacer"></span>
                     <p>
@@ -358,7 +360,7 @@
         <div class="area-didattica">
             <div class="area-desc">
                 <h3>SKILL DIDATTICHE</h3>
-                <p>Partendo dall'analisi della <strong>struttura psico-fisiologica del bambino di 3-5 anni,</strong> saranno illustrate le <strong>materie teoriche e le abilità pratiche</strong> che l'insegnante di arti marziali deve acquisire dal punto di vista <strong>neuropsicomotorio, pedagogico e comunicativo,</strong> per accogliere i bambini di età prescolare nella propria società sportiva, con <strong>professionalità e competenza.</strong></p>
+                <p>Partendo dall'analisi della <strong>struttura psico-fisiologica del bambino di 3-5 anni,</strong> saranno illustrate le <strong>materie teoriche e le abilità pratiche</strong> che l'insegnante di arti marziali deve acquisire dal punto di vista <strong>neuropsicomotorio, pedagogico e comunicativo,</strong> per accogliere i bambini di età prescolare nella propria società sportiva / centro infanzia / ludico-ricreativo, con <strong>professionalità e competenza.</strong></p>
             </div>
             <div class="area-img">
                 <img src="images/classejudo.jpeg" alt="">
@@ -402,7 +404,7 @@
 <section id="qualifiche" class="p-section">
     <div class="container">
         <div class="row text-center">
-            <h2 class="text-green">Abilitazioni, riconoscimenti, agevolazioni</h2>
+            <h2 class="text-green">Abilitazioni, riconoscimenti, crediti formativi</h2>
         </div>
 
         <div class="row">
@@ -477,7 +479,7 @@
                             </div>
                             <div class="riconoscimento">
                                 <div class="riconoscimento-desc">
-                                    5 Crediti formativi Fijlkam
+                                    5 Crediti formativi Fijlkam che saranno caricati sull’area personale riservata solo successivamente all’acquisizione della qualifica minima di aspirante allenatore federale.
                                 </div>
                                 <div class="riconoscimento-icon">
                                     <i class="bi bi-check-circle-fill"></i>
@@ -490,12 +492,14 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            PER GLI ALTRI CORSISTI
+                            ALTRI CORSISTI*
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <div class="riconoscimento">
+                        <small  style="font-size:10px">*Partecipanti che, al momento dell’iscrizione al corso, non sono tesserati fijlkam.
+L’iscrizione comporta l’acquisizione del ruolo di associato all’asd Educajudo e di tesserato Fijlkam</small>
+                            <div class="riconoscimento mt-2">
                                 <div class="riconoscimento-desc">
                                 Attestato di partecipazione rilasciato da Educajudo, dal titolo: «Approccio neuropsicomotorio e metodologia didattica per bambini di 3-5 anni»
                                 </div>
@@ -530,9 +534,10 @@
         <h2 class="text-white">Assistenza e risorse</h2>
         <div class="link-assistenza d-flex flex-column flex-md-row align-items-center">
             <a href="#">Programma e regolamento</a>
-            <a href="#">Guida alla navigazione in piattaforma</a>
+            <a href="#">Guida alla navigazione</a>
             <a href="#">FAQ</a>
             <a href="#">Diario di bordo del tirocinio</a>
+            <a href="#">Domanda di iscrizione alla Clinic</a>
         </div>
     </div>
 </section>

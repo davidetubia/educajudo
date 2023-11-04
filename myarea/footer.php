@@ -1,5 +1,7 @@
 </main>
-        <div class="disclaimer">
+<div id="disclaimer" class="bg-black py-3">
+    <div class="container text-white text-center">
+        <div>
             <p class="text-small">
                 2023 All right reserved. <br>
                 La struttura del corso e i relativi contenuti testo-audio-video-grafica sono proprietà di Educajudo.<br>
@@ -7,6 +9,9 @@
             </p>
         </div>
     </div>
+</div>
+
+
 
 
     <!-- 
@@ -19,9 +24,9 @@
     -->
     <script>
 
-        if($('aside').length){
-            @* $('header, .disclaimer').hide(); *@
-        }
+        // if($('aside').length){
+        //     @* $('header, .disclaimer').hide(); *@
+        // }
 
         if($('.domanda').length){
             $('#questionario').width('100%');
@@ -51,6 +56,18 @@
             }
         });
     </script>
+
+    <script>
+        $(document).ready(function(){
+            const hasSidebar = $('#sidebarCorsi').length;
+            const sidebarWidth = $('#sidebarCorsi').width();
+            console.log(sidebarWidth)
+            if(hasSidebar == 1){
+                $('#disclaimer').addClass('shrink-disclaimer');
+            }
+        });
+    </script>
+
 
     <!-- 
         Questo script nasconde e mostra sezione relatori

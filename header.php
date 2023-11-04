@@ -22,7 +22,7 @@
     <header>
         <div class="container d-flex align-items-center">
             <div class="flex-grow-1">
-                <a href="/educajudo"><img src="images/edutraining-green.png" id="logo" alt="Logo Fijlkam ed Educajudo"></a>
+                <a href="/educajudo"><img src="/educajudo/images/logo-edutraining-class.svg" id="logo" alt="Logo Fijlkam ed Educajudo"></a>
             </div>
 
                 <!-- NASCONDERE DOPO LOGIN -->
@@ -59,7 +59,7 @@
                         Menu
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="index.php#perche">Perchè edu-training class</a></li>
+                        <li><a class="dropdown-item" href="index.php#perche">Perchè Edutraining class</a></li>
                         <li><a class="dropdown-item" href="index.php#piattaforma">La piattaforma</a></li>
                         <li><a class="dropdown-item" href="index.php#relatori">Relatori</a></li>
                         <li><a class="dropdown-item" href="index.php#chi">Destinatari</a></li>

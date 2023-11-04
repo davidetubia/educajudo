@@ -156,11 +156,10 @@ const dataPolar = {
         'Area neuropsicologica',
         'Comunicazione e linguaggio',
         'Affettivo-relazionale',
-        ''
     ],
     datasets: [{
         label: 'Competenze acquisite',
-        data: [180, 180, 141, 127, 121, 0],
+        data: [180, 180, 141, 127, 121],
         fill: true,
         backgroundColor: 'rgb(140, 197, 71, 0.2)',
         borderColor: '#8cc547',

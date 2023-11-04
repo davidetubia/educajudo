@@ -14,7 +14,7 @@
     -->
     <div class="quiz-alert p-5">
         <div class="container">
-        <h1 class="mt-3">
+        <h1 class="mt-5">
             Stai per accedere al test di verifica a sbarramento.
         </h1>
         <h2>
@@ -22,10 +22,10 @@
         Avrai a disposizione al massimo 60 secondi per rispondere a ciascuna domanda.
         </h2>
             
-        <p>Dovrai prima selezionare la risposta e poi confermarla. Il sistema indicherà immediatamente se l’opzione che hai scelto è giusta o meno.
-        Cliccando “VAI ALLA DOMANDA SUCCESSIVA” potrai continuare il test fino al suo completamento.
-        Una volta ultimate tutte le domande, potrai accedere alla sezione successiva del modulo solo se avrai risposto correttamente <strong>all’80% delle domande</strong>.<br>
-        In caso contrario non potrai rifare il test prima di %%%</p>
+        <p>Dovrai prima selezionare la risposta e poi confermarla. Il sistema indicherà se l’opzione che hai scelto è giusta o meno.<br>
+        Cliccando “VAI ALLA DOMANDA SUCCESSIVA” potrai continuare il test fino al suo completamento.<br>
+        <br>Una volta ultimate tutte le domande, potrai accedere alla sezione successiva del modulo solo se avrai risposto correttamente<br><strong>all’80% delle domande</strong>.<br>
+        <br>In caso contrario non potrai rifare il test prima di 24 ore</p>
         <a href="#" class="btn btn-primary btn-start-test">PARTI CON IL TEST</a>
         </div>
     </div>
