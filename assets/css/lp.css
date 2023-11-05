@@ -686,12 +686,24 @@ html {
   }
 }
 #home .loghi #logo-fijlkam {
-  max-height: 28px!important;
+  max-height: 50px!important;
   margin-top: 3px;
 }
+@media only screen and (max-width: 600px) {
+  #home .loghi #logo-fijlkam {
+    width: 120px!important;
+    height: auto!important;
+  }
+}
 #home .loghi #logo-ijf {
-  margin-left: 10px;
-  max-height: 40px!important;
+  margin-left: 30px;
+  max-height: 55px!important;
+}
+@media only screen and (max-width: 600px) {
+  #home .loghi #logo-ijf {
+    width: 120px!important;
+    height: auto!important;
+  }
 }
 #home .loghi #logo-anupi {
   width: 200px!important;
