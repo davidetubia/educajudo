@@ -24,11 +24,11 @@
             <div class="adopted-by d-flex flex-row loghi">
                 <div class="d-flex flex-column">
                     <span>Powered by</span>
-                    <img src="images/logo-educajudo_2.png" alt="Logo Educajudo.it">
+                    <img src="images/logo-educajudo_2.png" id="educajudo" alt="Logo Educajudo.it">
                 </div>
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column logo-anupi">
                     <span>In partnership with</span>
-                    <h3 id="logo-anupi">ANUPI TNPEE</h3>
+                    <img src="images/logo-anupi-tnpee.png" id="logo-anupi">
                 </div>
             </div>
 
@@ -59,6 +59,12 @@
 
     setInterval(loopClasses, 5000);
     </script>
+
+    <section id="anupi-welcome" class="p-section bg-gray text-white text-center">
+        <div class="container">
+            <span>Inizia da qui il percorso di formazione adottato dalla <br><b>Federazione Italiana Judo Lotta Karate e Arti Marziali<br>IJF Academy</b><br> Con il paternariato della <b><br>Commissione Tecnico Scientifica della Associazione Nazionale dei Terapisti della Neuro e Psicomotricità dell'età evolutiva</b><br>Powered by Educajudo</span>
+        </div>
+    </section>
 
     <section id="perche" class="p-section bg-light-gray">
         <div class="container">

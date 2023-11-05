@@ -186,10 +186,13 @@ body, html{
             padding: 10px;
         }
         img{
-            max-height: 35px;
             width: auto!important;
+        }
+        #educajudo{
+            height: 53px;
             @media only screen and (max-width: 600px) {
-                max-height: 20px;
+                max-height: 25px!important;
+                width: auto;
             }
         }
         #logo-fijlkam{
@@ -200,9 +203,14 @@ body, html{
             margin-left: 10px;
             max-height: 40px!important;
         }
+
         #logo-anupi{
-            font-size: 23px!important;
-            font-weight: 300!important;
+            width: 200px!important;
+            height: 53px!important;
+            @media only screen and (max-width: 600px) {
+                width: 100px!important;
+                height: 27px!important;
+            }
         }
     }
 
@@ -677,6 +685,16 @@ footer{
     font-size: 24px;
 }
 
+#anupi-welcome{
+    text-align: center!important;
+    justify-items: center;
+    font-size:16px;
+    @media only screen and (max-width: 600px) {
+        text-align: center!important;
+        justify-items: center;
+        font-size:13px;
+    }
+}
 .video-pre-corso{
     background-color: white;
     border-radius: 10px;

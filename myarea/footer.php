@@ -2,7 +2,7 @@
 <div id="disclaimer" class="bg-black py-3">
     <div class="container text-white text-center">
         <div>
-            <p class="text-small">
+            <p class="text-small text-center">
                 2023 All right reserved. <br>
                 La struttura del corso e i relativi contenuti testo-audio-video-grafica sono proprietà di Educajudo.<br>
                 La riproduzione non autorizzata, così come la trasmissione, il riutilizzo e quant’altro legato all’impiego non consentito, sono perseguiti ai sensi di legge.
